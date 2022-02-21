@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from .models import Activity
 
 
 def home(request):
-    return render(request, 'main/home.html', {})
+    activity = Activity.objects.last_6_activities()
+    context = {
+        'activity': activity
+    }
+    return render(request, 'main/home.html', context)
