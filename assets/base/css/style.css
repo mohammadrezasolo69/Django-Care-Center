@@ -1,0 +1,6640 @@
+html {
+    font-size: 10px;
+    font-family: tanha; !important;
+    direction: rtl
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: linear-gradient(0deg, #fdfdfd, white)
+}
+
+ul {
+    list-style-type: none
+}
+
+input, textarea, select {
+    outline: none
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+a {
+    text-decoration: none
+}
+
+input {
+    outline: none;
+    border: none
+}
+
+@media screen and (min-width: 1200px) {
+    ._button {
+        width: fit-content;
+        height: fit-content;
+        padding: .7rem 2rem;
+        border-radius: 5rem;
+        font-family: "iyBold_woff";
+        font-size: 1.5rem;
+        text-decoration: none
+    }
+
+    ._button:hover {
+        cursor: pointer
+    }
+
+    .high-emphasis {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    .high-emphasis:hover {
+        background-color: #3ba140
+    }
+
+    .med-emphasis {
+        border: .2rem solid #44B649;
+        color: #44B649
+    }
+
+    .med-emphasis:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper {
+        width: 70%;
+        height: fit-content;
+        display: inline-block;
+        margin-right: 15%
+    }
+
+    header {
+        width: 100%;
+        height: 13.5rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem
+    }
+
+    header > .header-section {
+        height: fit-content;
+        display: inline-block
+    }
+
+    header > #nav-menu {
+        width: 35%;
+        height: fit-content;
+        display: none
+    }
+
+    header > #logo-section {
+        width: 25%
+    }
+
+    header > #logo-section > img {
+        width: 6rem;
+        display: inline-block
+    }
+
+    header > #logo-section > div, header > #logo-section > h2 {
+        width: fit-content;
+        display: inline-block;
+        margin-right: 1.2rem
+    }
+
+    header > #logo-section span {
+        display: block;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem;
+        color: #44B649;
+        text-align: right
+    }
+
+    header > #logo-section #w-name {
+        font-family: "kBlack_woff";
+        font-size: 5rem
+    }
+
+    header > #menu {
+        width: 65%
+    }
+
+    header > #menu > ul {
+        width: 100%;
+        height: fit-content
+    }
+
+    header > #menu > ul > li {
+        width: fit-content;
+        margin: 0rem 1rem;
+        padding: .5rem 1.5rem;
+        display: inline-block;
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        border-radius: .5rem;
+        overflow: hidden
+    }
+
+    header > #menu > ul > li:hover {
+        cursor: pointer
+    }
+
+    header > #menu > ul > li:hover > a {
+        transition: all 250ms;
+        font-family: "iyBold_woff";
+        color: #44B649;
+        cursor: pointer
+    }
+
+    header > #menu > ul > li > a {
+        text-decoration: none;
+        color: #3B3B3B
+    }
+
+    header > #reseption-section {
+        width: 20%;
+        text-align: left;
+        display: none
+    }
+
+    #wrapper > .box {
+        margin: 3rem 0rem
+    }
+
+    #wrapper > .green-box {
+        width: 100%;
+        height: fit-content;
+        background-color: #309975;
+        border-radius: 2rem
+    }
+
+    #wrapper > .section-title {
+        display: flex;
+        align-items: center;
+        margin: 5rem 0rem 3rem
+    }
+
+    #wrapper > .section-title > .section-bullet, #wrapper > .section-title > h2 {
+        display: inline-block
+    }
+
+    #wrapper > .section-title > .section-bullet {
+        width: 3rem;
+        height: 3rem
+    }
+
+    #wrapper > .section-title > h2 {
+        font-family: "kBlack_woff";
+        font-size: 3.9rem;
+        margin-right: 2rem;
+        color: #FFD23E
+    }
+
+    #wrapper > .grid-section {
+        margin: 0
+    }
+
+    #wrapper > .grid-section, #wrapper > .grid-section > ul {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li {
+        width: 30%;
+        height: 17rem;
+        margin-left: 5%;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        display: inline-block;
+        float: right;
+        padding: 2rem;
+        border: .35rem solid #F8F8F8;
+        transform: scale(1);
+        transition: all 500ms
+    }
+
+    #wrapper > .grid-section > ul > li:hover {
+        cursor: pointer;
+        border-color: #44B649;
+        transition: all 500ms;
+        transform: scale(1.05)
+    }
+
+    #wrapper > .grid-section > ul > li:hover > .grid-head > img {
+        transition: all 500ms;
+        filter: grayscale(0%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head {
+        width: 90%;
+        height: 50%;
+        margin: 0rem 5% 1.5rem;
+        display: flex;
+        align-items: center
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > * {
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > img {
+        height: 80%;
+        filter: grayscale(100%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > p {
+        font-family: "iyBold_woff";
+        font-size: 1.7rem;
+        margin-right: 10%
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-body {
+        height: 60%;
+        font-family: "iyRegular_woff";
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 200%;
+        color: #3D3D3D
+    }
+
+    #wrapper > .grid-section > ul > li:nth-of-type(3n+3) {
+        margin-left: 0%
+    }
+
+    #wrapper > #top-head {
+        height: 28rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 10rem
+    }
+
+    #wrapper > #top-head > img {
+        height: 150%;
+        position: absolute;
+        bottom: 0;
+        right: 0rem;;
+        float: right
+    }
+
+    #wrapper > #top-head > #head-details {
+        width: 55%;
+        height: fit-content;
+        position: absolute;
+        left: 0rem
+    }
+
+    #wrapper > #top-head > #head-details > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.8rem;
+        color: #fff;
+        display: block;
+        text-align: right
+    }
+
+    #wrapper > #top-head > #head-details > p > strong {
+        font-weight: 400
+    }
+
+    #wrapper > #top-head > #head-details > .w-name {
+        font-family: "kBlack_woff";
+        font-size: 12rem
+    }
+
+    #wrapper > #ep-reception-box {
+        height: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > #ep-reception-box > div {
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative
+    }
+
+    #wrapper > #ep-reception-box > div > * {
+        display: inline-block;
+        position: absolute
+    }
+
+    #wrapper > #ep-reception-box > div > p {
+        width: fit-content;
+        font-family: "iyBold_woff";
+        font-size: 2.3rem;
+        color: #fff;
+        right: 0rem
+    }
+
+    #wrapper > #ep-reception-box > div > ._button {
+        width: fit-content;
+        font-size: 2rem;
+        padding: 1.5rem 4rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        left: 0rem;
+        color: #44B649;
+        transition: all 500ms
+    }
+
+    #wrapper > #ep-reception-box > div > ._button:hover {
+        box-shadow: 0rem 1rem 2rem .4rem rgba(0, 0, 0, .17);
+        transition: all 500ms;
+        transform: translateY(-.5rem)
+    }
+
+    #wrapper > #gallery-box {
+        height: 20rem
+    }
+
+    #wrapper > #gallery-box > * {
+        display: inline-block
+    }
+
+    #wrapper > #gallery-box > div {
+        width: 40rem;
+        height: fit-content
+    }
+
+    #wrapper > #gallery-box > div > p {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "iyMedium_woff";
+        font-size: 1.6rem;
+        float: right;
+        line-height: 210%;
+        text-align: right
+    }
+
+    #wrapper > #gallery-box > div > ._button {
+        margin-top: 1rem;
+        display: inline-block
+    }
+
+    #wrapper > #gallery-box > img {
+        height: 100%;
+        float: left;
+        object-fit: fill;
+        border-radius: 2rem
+    }
+
+    #wrapper > aside, #wrapper > main {
+        display: block;
+        float: right
+    }
+
+    #wrapper > aside {
+        width: 35%;
+        height: fit-content;
+        margin-bottom: 5rem
+    }
+
+    #wrapper > aside > .side-box {
+        height: fit-content;
+        border-radius: 2rem;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > aside > .side-box:first-child {
+        margin: 0rem 0rem 2.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-title {
+        width: 100%;
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem;
+        text-align: right;
+        color: #3D3D3D;
+        margin-bottom: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body {
+        width: 100%;
+        height: fit-content
+    }
+
+    #wrapper > aside > .side-box > .box-body > a > img {
+        width: 100%;
+        display: block;
+        border-radius: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box {
+        width: 100%;
+        height: 4.5rem;
+        display: block;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: #F2F2F2 solid .2rem;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #000
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box::placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-moz-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-ms-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-webkit-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box:-moz-placeholder {
+        color: #B1B1B1
+    }
+
+    #wrapper > aside > .side-box > .box-body > .search-box {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul {
+        width: 100%;
+        height: fit-content;
+        border: #F2F2F2 solid .3rem;
+        border-radius: 2rem;
+        background-color: #FFF
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li {
+        width: 100%;
+        height: 9rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > * {
+        display: inline-block
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        margin-right: 1.5rem;
+        float: right;
+        border-radius: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body {
+        width: 100%;
+        margin-right: 2rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > span {
+        width: 100%;
+        display: block;
+        text-align: right;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-title {
+        color: #3D3D3D;
+        margin-bottom: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-views {
+        color: #9B9B9B;
+        font-family: "iyLight_woff"
+    }
+
+    #wrapper > main {
+        width: 62%;
+        height: fit-content;
+        margin-left: 3%;
+        display: inline-block
+    }
+
+    #wrapper > main > .box, #wrapper > main > section > .box {
+        border: .2rem solid #F2F2F2;
+        border-radius: 1rem;
+        padding: 1.5rem 3rem;
+        margin: 3rem 0rem
+    }
+
+    #wrapper > main > section > h3, #wrapper > main > .box > .section-title {
+        width: 100%;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem
+    }
+
+    #wrapper > main > article {
+        width: 100%;
+        height: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article:first-child {
+        margin-top: 0rem
+    }
+
+    #wrapper > main > article > .art-head {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > article > .art-head > a {
+        width: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article > .art-head > a > h2, #wrapper > main > article > .art-head > a > h1 {
+        width: fit-content;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2.2rem;
+        color: #3D3D3D
+    }
+
+    #wrapper > main > article > .art-head > .more {
+        width: 100%;
+        height: 3rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item {
+        width: fit-content;
+        height: 100%;
+        margin-left: 5rem;
+        display: flex;
+        float: right;
+        align-items: center;
+        margin-top: .6rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > img {
+        height: 50%;
+        opacity: 30%;
+        margin-left: 1rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > span {
+        color: #9B9B9B;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem
+    }
+
+    #wrapper > main > article > .art-cover {
+        width: 100%;
+        border-radius: 2rem
+    }
+
+    #wrapper > main > article > .art-summary, #wrapper > main > article > .art-content {
+        margin: 2rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > *, #wrapper > main > article > .art-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.35rem;
+        line-height: 200%;
+        text-align: justify
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-summary > h4, #wrapper > main > article > .art-content > h2, #wrapper > main > article > .art-content > h3, #wrapper > main > article > .art-content > h4 {
+        font-family: "iyBold_woff";
+        margin: 1rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-content > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 1.9rem
+    }
+
+    #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-content > h3 {
+        font-size: 1.55rem
+    }
+
+    #wrapper > main > article > .art-footer {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > main > article > .art-footer > ._button {
+        border-radius: .8rem;
+        float: left;
+        font-size: 1.4rem;
+        padding: .9rem 2.5rem
+    }
+
+    #wrapper > main > #tags {
+        width: 100%;
+        height: fit-content;
+        border-radius: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > #tags a {
+        width: fit-content;
+        padding: .3rem 1rem;
+        display: inline-block;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags .divider {
+        width: fit-content;
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags a:hover {
+        background-color: #f3f3f3
+    }
+
+    #wrapper > main > section {
+        width: 100%;
+        height: fit-content;
+        margin: 0rem
+    }
+
+    #wrapper > main > section > .box {
+        margin-top: 1rem;
+        padding: 1.5rem 2rem
+    }
+
+    #wrapper > main > #morePosts ul > li {
+        width: 100%;
+        text-align: right;
+        display: block;
+        margin: 0rem 0rem .5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem
+    }
+
+    #wrapper > main > #morePosts ul > li > a {
+        width: 100%;
+        text-align: right;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        display: block;
+        color: #3D3D3D;
+        transition: all 100ms
+    }
+
+    #wrapper > main > #morePosts ul > li:hover > a {
+        transition: all 100ms;
+        cursor: pointer;
+        color: #44B649
+    }
+
+    #wrapper > main > #pagination {
+        width: 100%;
+        height: 5rem;
+        background-color: #fff;
+        margin-bottom: 2rem;
+        border-radius: 1.4rem;
+        border: .2rem solid #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: hidden
+    }
+
+    #wrapper > main > #pagination > .page-num {
+        height: 100%;
+        border-right: .2rem solid #F2F2F2;
+        font-size: 1.6rem;
+        padding-top: 1.4rem;
+        flex-grow: 1;
+        color: #3D3D3D;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > main > #pagination > .page-num:first-child {
+        border-right: 0rem
+    }
+
+    #wrapper > main > #pagination > .page-num:hover {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > main > #pagination > .current-page {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > main > #pagination > .current-page:hover {
+        background-color: #44B649
+    }
+
+    footer {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        background-color: #313131
+    }
+
+    footer > .footer-section {
+        width: 100%;
+        height: fit-content;
+        display: inline-block;
+        border-bottom: .1rem solid #6B6B6B
+    }
+
+    footer > .footer-section:last-child {
+        border-bottom: none
+    }
+
+    footer > #main-footer {
+        padding: 2% 8%
+    }
+
+    footer > #main-footer > div {
+        width: 48%;
+        height: fit-content
+    }
+
+    footer > #main-footer > #map {
+        width: fit-content;
+        float: left;
+        border-radius: 2rem;
+        overflow: hidden
+    }
+
+    footer > #main-footer > #details {
+        float: right
+    }
+
+    footer > #main-footer > #details > #logo-section {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        align-items: center
+    }
+
+    footer > #main-footer > #details > #logo-section > img {
+        width: 7rem;
+        display: inline-block
+    }
+
+    footer > #main-footer > #details > #logo-section > div {
+        display: inline-block;
+        margin-right: 2rem
+    }
+
+    footer > #main-footer > #details > #logo-section > div > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.1rem;
+        text-align: right;
+        color: #fff
+    }
+
+    footer > #main-footer > #details > #logo-section > div > #w-name {
+        font-family: "kBlack_woff";
+        font-size: 5rem
+    }
+
+    footer > #main-footer > #details > #address {
+        font-family: "iyRegular_woff";
+        line-height: 200%;
+        font-size: 1.3rem;
+        color: #fff;
+        text-align: right;
+        margin-top: 3rem
+    }
+
+    footer > #footer-menu {
+        width: 100%;
+        height: fit-content;
+        padding: 1% 8%
+    }
+
+    footer > #footer-menu > ul {
+        width: 100%;
+        text-align: right
+    }
+
+    footer > #footer-menu > ul > li {
+        display: inline-block;
+        padding: .5rem 1.2rem;
+        margin: 0rem 1rem;
+        border-radius: 1rem
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        cursor: pointer;
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        background-color: rgba(0, 0, 0, .13);
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li > a {
+        font-family: "iyLight_woff";
+        font-size: 1.45rem;
+        color: #fff;
+        text-decoration: none
+    }
+
+    footer > #footer-copyright {
+        width: 100%;
+        padding: 1% 8%;
+        font-family: "iyLight_woff";
+        font-size: 1.3rem;
+        text-align: right;
+        background-color: #313131;
+        color: #fff
+    }
+
+    footer > #footer-copyright:hover > a {
+        transition: all 1s;
+        transform: translateX(0rem);
+        opacity: 100%;
+        cursor: pointer
+    }
+
+    footer > #footer-copyright > a {
+        transition: all 1s;
+        color: #fff;
+        background-color: #ECBD20;
+        padding: .4rem .8rem;
+        margin-right: 1rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        display: inline-block;
+        transform: translateX(5rem);
+        opacity: 0%
+    }
+
+    #wrapper > .page-title {
+        width: 100%;
+        text-align: right;
+        font-size: 3rem;
+        font-family: "iyExtraBold_woff";
+        color: #3D3D3D;
+        margin: 0 0 3rem
+    }
+
+    #wrapper > .gallery-item {
+        width: 100%;
+        height: fit-content;
+        margin: 1.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > img {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem;
+        color: #3D3D3D;
+        margin-right: 1.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li {
+        width: 32%;
+        height: 16rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 2%;
+        border-radius: 2rem;
+        float: right
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:nth-of-type(3n+3) {
+        margin-left: 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > img {
+        width: 100%;
+        height: 140%;
+        transform: translateY(-6rem);
+        object-fit: cover
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        opacity: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(68, 182, 73, .95);
+        z-index: 32000
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > .nextArr {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > span {
+        width: 70%;
+        font-family: "iyBold_woff";
+        font-size: 2rem;
+        color: #fff;
+        text-align: left
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info {
+        opacity: 100%;
+        transition: all 500ms;
+        cursor: pointer
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info > .nextArr {
+        -webkit-animation: nexArrAnim;
+        -o-animation: nexArrAnim;
+        animation: nexArrAnim;
+        animation-delay: 500ms;
+        -moz-animation-delay: 500ms;
+        -o-animation-delay: 500ms;
+        -webkit-animation-delay: 500ms;
+        animation-duration: 500ms;
+        -o-animation-duration: 500ms;
+        -webkit-animation-duration: 500ms;
+        -moz-animation-duration: 500ms;
+        animation-fill-mode: forwards
+    }
+
+    @keyframes nexArrAnim {
+        from {
+            transform: translateX(0rem)
+        }
+        to {
+            transform: translateX(1rem)
+        }
+    }#wrapper > #faq-body {
+         width: 100%;
+         height: fit-content;
+         display: inline-block;
+         margin-bottom: 5rem
+     }
+
+    #wrapper > #faq-body > ul {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        border: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-bottom: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > span {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > img {
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 2.5rem
+    }
+
+    #wrapper > #faq-body > ul > li:last-child {
+        border-bottom: none
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-answer {
+        display: none;
+        font-family: "iyLight_woff";
+        font-size: 1.6rem;
+        color: #282828;
+        padding: 2rem 1.5rem;
+        background-color: #fcfcfc
+    }
+
+    #wrapper > #reception-form {
+        width: 100%;
+        height: fit-content;
+        display: inline-block;
+        margin: 2rem 0rem
+    }
+
+    #wrapper > #reception-form > .form-row {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        position: relative
+    }
+
+    #wrapper > #reception-form > .form-row input, #wrapper > #reception-form > .form-row select {
+        height: 4rem
+    }
+
+    #wrapper > #reception-form > .form-row input, #wrapper > #reception-form > .form-row select, #wrapper > #reception-form > .form-row textarea {
+        width: 30%;
+        margin-left: 5%;
+        border-radius: .5rem;
+        border: .2rem solid #efefef;
+        padding-right: 1rem;
+        float: right;
+        font-family: "iyRegular_woff";
+        font-size: 1.3rem;
+        transition: 500ms all
+    }
+
+    #wrapper > #reception-form > .form-row input:last-child, #wrapper > #reception-form > .form-row select:last-child {
+        margin-left: 0rem
+    }
+
+    #wrapper > #reception-form > .form-row input:focus, #wrapper > #reception-form > .form-row input:hover {
+        transition: 500ms all
+    }
+
+    #wrapper > #reception-form > .form-row input:hover {
+        border: none;
+        box-shadow: 0rem 0rem 0rem .3rem rgba(136, 235, 69, .3)
+    }
+
+    #wrapper > #reception-form > .form-row input:focus {
+        border: 0rem;
+        box-shadow: 0rem 0rem 0rem .3rem rgba(136, 235, 69, .82)
+    }
+
+    #wrapper > #reception-form > .form-row > .len-1 {
+        width: 32%;
+        height: fit-content
+    }
+
+    #wrapper > #reception-form > .form-row > .len-2 {
+        width: 68%;
+        height: fit-content;
+        position: relative;
+        float: right
+    }
+
+    #wrapper > #reception-form > .form-row > .len-2 > #diseasesList {
+        width: 44%;
+        height: 20rem;
+        position: absolute;
+        background-color: #fff;
+        border-radius: .5rem;
+        border: .2rem solid #efefef;
+        top: 3.8rem;
+        left: 4.5%;
+        display: none
+    }
+
+    #wrapper > #reception-form > .form-row > .len-2 > #diseasesList > li {
+        width: 100%
+    }
+
+    #wrapper > #reception-form > .form-row > .len-2 > .one-line {
+        width: 44%;
+        height: 4rem;
+        margin-left: 7.5%;
+        float: right;
+        display: inline-block
+    }
+
+    #wrapper > #reception-form > .form-row > .len-2 > .one-line:nth-of-type(2) {
+        margin-left: 0%
+    }
+
+    #wrapper > #reception-form > .form-row > .len-2 > textarea {
+        min-width: 95.5%;
+        max-width: 95.5%;
+        min-height: 15rem;
+        max-height: 15rem;
+        padding: 1rem;
+        clear: both;
+        margin: 2rem 0rem
+    }
+
+    #wrapper > #reception-form > .form-row > .len-1 {
+        float: right;
+        display: inline-block
+    }
+
+    #wrapper > #reception-form > .form-row > .len-1 > ul {
+        width: 95%;
+        height: 24rem;
+        margin-right: 5%
+    }
+
+    #wrapper > #reception-form > .form-row > .len-1 > ul > li {
+        width: fit-content;
+        height: 3rem;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 1.3rem;
+        border-radius: 50rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        float: right
+    }
+
+    #wrapper > #reception-form > .form-row > .len-1 > ul > li:hover {
+        background-color: rgba(234, 234, 234, .95)
+    }
+
+    #wrapper > #reception-form > .form-row > .len-1 > ul > li > img {
+        height: 30%;
+        margin-left: 1rem;
+        opacity: 50%
+    }
+
+    #wrapper > #reception-form > .form-row > .len-1 > ul > li > img:hover {
+        cursor: pointer;
+        opacity: 80%
+    }
+
+    #wrapper > #reception-form > .form-row > .len-1 > ul > li > span {
+        font-family: "iyRegular_woff";
+        font-size: 1.2rem;
+        color: #1a202c
+    }
+
+    #wrapper > #reception-form > .form-row > #acceptRulesDiv {
+        width: fit-content;
+        height: fit-content;
+        float: right
+    }
+
+    #wrapper > #reception-form > .form-row > div > input[type="checkbox"] {
+        width: 1rem;
+        height: 1rem;
+        margin-left: 1rem
+    }
+
+    #wrapper > #reception-form > .form-row > div > label {
+        font-family: "iyRegular_woff";
+        font-size: 1.3rem
+    }
+
+    #wrapper > #reception-form > .form-row > .submit-btn {
+        width: fit-content;
+        display: block;
+        position: absolute;
+        left: 0rem;
+        font-size: 1.4rem;
+        font-family: "iyBold_woff";
+        background-color: #44B649;
+        color: #fff;
+        border: none;
+        text-align: center;
+        padding: .5rem 2.6rem
+    }
+
+    #wrapper > #reception-form > .form-row > .submit-btn:focus {
+        box-shadow: none
+    }
+
+    #wrapper > #reception-form > .form-row > .submit-btn:hover {
+        background-color: #2d8b32;
+        cursor: pointer
+    }
+
+    #wrapper > #page-content {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 0rem 5rem
+    }
+
+    #wrapper > #page-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #313131;
+        margin: 1rem 0rem
+    }
+
+    #wrapper > #page-content h1 {
+        font-family: "iyExtraBold_woff";
+        font-size: 4rem
+    }
+
+    #wrapper > #page-content h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 3rem
+    }
+
+    #wrapper > #page-content h3 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2.5rem
+    }
+
+    #wrapper > #page-content p {
+        font-size: 1.4rem
+    }
+
+    #wrapper > #page-content strong {
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content .hint {
+        background-color: rgba(236, 189, 32, .4);
+        color: rgba(35, 35, 35, .85);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin: 1rem 0rem;
+        display: inline-block
+    }
+
+    #wrapper > #page-content .number-link {
+        width: fit-content;
+        display: block;
+        direction: ltr;
+        border: .2rem solid #44B649;
+        padding: .6rem 2rem;
+        border-radius: 5rem;
+        color: #343434;
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        margin: 1.1rem 0rem
+    }
+
+    #wrapper > #page-content > .numbersSection-title {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem;
+        margin-top: 1.5rem
+    }
+
+    #wrapper > #page-content > .contact-box {
+        width: 100%;
+        height: fit-content;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 5rem;
+        background-color: rgb(250, 250, 250)
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        padding: 2rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header > h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 5rem 2rem;
+        text-align: center
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > #map {
+        width: 35rem;
+        height: 20.3rem;
+        display: block;
+        margin: auto;
+        border-radius: 2rem;
+        overflow: hidden
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link {
+        width: 30%;
+        margin-left: 3rem;
+        display: inline-block;
+        height: fit-content;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.7rem;
+        border-radius: 3rem;
+        color: #44B649;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:last-child {
+        margin-left: 0rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link {
+        flex-grow: 1;
+        height: fit-content;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.7rem;
+        color: #9B4BAE;
+        border-color: #9B4BAE;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link:hover {
+        background-color: #9B4BAE;
+        color: #fff
+    }
+
+    #wrapper > #preview {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        display: block;
+        background-color: rgba(0, 0, 0, .87);
+        z-index: 500000;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box {
+        width: 55%;
+        background-color: lightgray;
+        display: block;
+        margin: 5% auto;
+        border-radius: 2rem;
+        overflow: hidden;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
+    #wrapper > #preview > #close-icn {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        filter: invert(100%);
+        border-radius: 5rem;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, .16)
+    }
+
+    #wrapper > #preview > #close-icn:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, .25)
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    ._button {
+        width: fit-content;
+        height: fit-content;
+        padding: .5rem 1.6rem;
+        border-radius: 5rem;
+        font-family: "iyBold_woff";
+        font-size: 1.4rem;
+        text-decoration: none
+    }
+
+    ._button:hover {
+        cursor: pointer
+    }
+
+    .high-emphasis {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    .high-emphasis:hover {
+        background-color: #3ba140
+    }
+
+    .med-emphasis {
+        border: .25rem solid #44B649;
+        color: #44B649
+    }
+
+    .med-emphasis:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper {
+        width: 80%;
+        height: fit-content;
+        display: inline-block;
+        margin-right: 10%
+    }
+
+    header {
+        width: 100%;
+        height: 13.5rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem
+    }
+
+    header > .header-section {
+        height: fit-content;
+        display: inline-block
+    }
+
+    header > #nav-menu {
+        width: 35%;
+        height: fit-content;
+        display: none
+    }
+
+    header > #logo-section {
+        width: 30%
+    }
+
+    header > #logo-section > img {
+        width: 5rem;
+        display: inline-block
+    }
+
+    header > #logo-section > div, header > #logo-section > h2 {
+        width: fit-content;
+        display: inline-block;
+        margin-right: 1.5rem
+    }
+
+    header > #logo-section span {
+        display: block;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem;
+        color: #44B649;
+        text-align: right
+    }
+
+    header > #logo-section #w-name {
+        font-family: "kBlack_woff";
+        font-size: 4rem
+    }
+
+    header > #menu {
+        width: 65%
+    }
+
+    header > #menu > ul {
+        width: 100%;
+        height: fit-content
+    }
+
+    header > #menu > ul > li {
+        width: fit-content;
+        margin: 0rem .7rem;
+        padding: .5rem 1.2rem;
+        display: inline-block;
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        border-radius: .5rem;
+        overflow: hidden
+    }
+
+    header > #menu > ul > li:hover {
+        cursor: pointer
+    }
+
+    header > #menu > ul > li:hover > a {
+        transition: all 250ms;
+        font-family: "iyBold_woff";
+        color: #44B649;
+        cursor: pointer
+    }
+
+    header > #menu > ul > li > a {
+        text-decoration: none;
+        color: #3B3B3B
+    }
+
+    header > #reseption-section {
+        width: 20%;
+        text-align: left !important;
+        display: none
+    }
+
+    #wrapper > .box {
+        margin: 3rem 0rem
+    }
+
+    #wrapper > .green-box {
+        width: 100%;
+        height: fit-content;
+        background-color: #44B649;
+        border-radius: 2rem
+    }
+
+    #wrapper > .section-title {
+        display: flex;
+        align-items: center;
+        margin: 5rem 0rem 3rem
+    }
+
+    #wrapper > .section-title > .section-bullet, #wrapper > .section-title > h2 {
+        display: inline-block
+    }
+
+    #wrapper > .section-title > .section-bullet {
+        width: 2.9rem;
+        height: 2.9rem
+    }
+
+    #wrapper > .section-title > h2 {
+        font-family: "kBlack_woff";
+        font-size: 3.7rem;
+        margin-right: 2rem;
+        color: #FFD23E
+    }
+
+    #wrapper > .grid-section {
+        margin: 0
+    }
+
+    #wrapper > .grid-section, #wrapper > .grid-section > ul {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li {
+        width: 30%;
+        height: 16rem;
+        margin-left: 5%;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        display: inline-block;
+        float: right;
+        padding: 2rem;
+        border: .35rem solid #F8F8F8;
+        transform: scale(1);
+        transition: all 500ms;
+        background-color: #fff
+    }
+
+    #wrapper > .grid-section > ul > li:hover {
+        cursor: pointer;
+        border-color: #44B649;
+        transition: all 500ms;
+        transform: scale(1.05)
+    }
+
+    #wrapper > .grid-section > ul > li:hover > .grid-head > img {
+        transition: all 500ms;
+        filter: grayscale(0%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head {
+        width: 91%;
+        height: 50%;
+        margin: 0rem 4.5% 1.5rem;
+        display: flex;
+        align-items: center
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > * {
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > img {
+        height: 70%;
+        filter: grayscale(100%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > p {
+        font-family: "iyBold_woff";
+        font-size: 1.7rem;
+        margin-right: 10%
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-body {
+        height: 60%;
+        font-family: "iyRegular_woff";
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 200%;
+        color: #3D3D3D
+    }
+
+    #wrapper > .grid-section > ul > li:nth-of-type(3n+3) {
+        margin-left: 0%
+    }
+
+    #wrapper > #top-head {
+        height: 28rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 4rem
+    }
+
+    #wrapper > #top-head > img {
+        height: 120%;
+        position: absolute;
+        bottom: 0;
+        right: 0rem;;
+        float: right
+    }
+
+    #wrapper > #top-head > #head-details {
+        width: 55%;
+        height: fit-content;
+        position: absolute;
+        left: 0rem
+    }
+
+    #wrapper > #top-head > #head-details > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #fff;
+        display: block;
+        text-align: right
+    }
+
+    #wrapper > #top-head > #head-details > p > strong {
+        font-weight: 400;
+        font-family: "iyRegular_woff";
+        font-size: 1.8rem
+    }
+
+    #wrapper > #top-head > #head-details > .w-name {
+        font-family: "kBlack_woff";
+        font-size: 12rem
+    }
+
+    #wrapper > #ep-reception-box {
+        height: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > #ep-reception-box > div {
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative
+    }
+
+    #wrapper > #ep-reception-box > div > * {
+        display: inline-block;
+        position: absolute
+    }
+
+    #wrapper > #ep-reception-box > div > p {
+        width: fit-content;
+        font-family: "iyBold_woff";
+        font-size: 2rem;
+        color: #fff;
+        right: 0rem
+    }
+
+    #wrapper > #ep-reception-box > div > ._button {
+        width: fit-content;
+        font-size: 1.7rem;
+        padding: 1.1rem 2.5rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        left: 0rem;
+        color: #44B649;
+        transition: all 500ms
+    }
+
+    #wrapper > #ep-reception-box > div > ._button:hover {
+        box-shadow: 0rem 1rem 2rem .4rem rgba(0, 0, 0, .17);
+        transition: all 500ms;
+        transform: translateY(-.5rem)
+    }
+
+    #wrapper > #gallery-box {
+        height: 20rem
+    }
+
+    #wrapper > #gallery-box > * {
+        display: inline-block
+    }
+
+    #wrapper > #gallery-box > div {
+        width: 40rem;
+        height: fit-content
+    }
+
+    #wrapper > #gallery-box > div > p {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        float: right;
+        line-height: 210%;
+        text-align: right
+    }
+
+    #wrapper > #gallery-box > div > ._button {
+        margin-top: 1rem;
+        display: inline-block
+    }
+
+    #wrapper > #gallery-box > img {
+        height: 100%;
+        float: left;
+        object-fit: fill;
+        border-radius: 2rem
+    }
+
+    #wrapper > aside, #wrapper > main {
+        display: block;
+        float: right
+    }
+
+    #wrapper > aside {
+        width: 35%;
+        height: fit-content;
+        margin-bottom: 5rem
+    }
+
+    #wrapper > aside > .side-box {
+        height: fit-content;
+        border-radius: 2rem;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > aside > .side-box:first-child {
+        margin: 0rem 0rem 2.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-title {
+        width: 100%;
+        font-family: "iyExtraBold_woff";
+        font-size: 1.6rem;
+        text-align: right;
+        color: #3D3D3D;
+        margin-bottom: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body {
+        width: 100%;
+        height: fit-content
+    }
+
+    #wrapper > aside > .side-box > .box-body > a > img {
+        width: 100%;
+        display: block;
+        border-radius: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box {
+        width: 100%;
+        height: 4.5rem;
+        display: block;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: #F2F2F2 solid .2rem;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #000
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box::placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-moz-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-ms-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-webkit-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box:-moz-placeholder {
+        color: #B1B1B1
+    }
+
+    #wrapper > aside > .side-box > .box-body > .search-box {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul {
+        width: 100%;
+        height: fit-content;
+        border: #F2F2F2 solid .2rem;
+        border-radius: 2rem;
+        background-color: #FFF
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li {
+        width: 100%;
+        height: 9rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > * {
+        display: inline-block
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        margin-right: 1.5rem;
+        float: right;
+        border-radius: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body {
+        width: 100%;
+        margin-right: 2rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > span {
+        width: 100%;
+        display: block;
+        text-align: right;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-title {
+        color: #3D3D3D;
+        margin-bottom: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-views {
+        color: #9B9B9B;
+        font-family: "iyLight_woff"
+    }
+
+    #wrapper > main {
+        width: 62%;
+        height: fit-content;
+        margin-left: 3%;
+        display: inline-block
+    }
+
+    #wrapper > main > .box, #wrapper > main > section > .box {
+        border: .2rem solid #F2F2F2;
+        border-radius: 1rem;
+        padding: 1.5rem 3rem;
+        margin: 3rem 0rem
+    }
+
+    #wrapper > main > section > h3, #wrapper > main > .box > .section-title {
+        width: 100%;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem
+    }
+
+    #wrapper > main > article {
+        width: 100%;
+        height: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article:first-child {
+        margin-top: 0rem
+    }
+
+    #wrapper > main > article > .art-head {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > article > .art-head > a {
+        width: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article > .art-head > a > h2, #wrapper > main > article > .art-head > a > h1 {
+        width: fit-content;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2.2rem;
+        color: #3D3D3D
+    }
+
+    #wrapper > main > article > .art-head > .more {
+        width: 100%;
+        height: 3rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item {
+        width: fit-content;
+        height: 100%;
+        margin-left: 5rem;
+        display: flex;
+        float: right;
+        align-items: center;
+        margin-top: .6rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > img {
+        height: 50%;
+        opacity: 30%;
+        margin-left: 1rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > span {
+        color: #9B9B9B;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem
+    }
+
+    #wrapper > main > article > .art-cover {
+        width: 100%;
+        border-radius: 2rem
+    }
+
+    #wrapper > main > article > .art-summary, #wrapper > main > article > .art-content {
+        margin: 2rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > *, #wrapper > main > article > .art-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.35rem;
+        line-height: 200%;
+        text-align: justify
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-summary > h4, #wrapper > main > article > .art-content > h2, #wrapper > main > article > .art-content > h3, #wrapper > main > article > .art-content > h4 {
+        font-family: "iyBold_woff";
+        margin: 1rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-content > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 1.9rem
+    }
+
+    #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-content > h3 {
+        font-size: 1.55rem
+    }
+
+    #wrapper > main > article > .art-footer {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > main > article > .art-footer > ._button {
+        border-radius: .8rem;
+        float: left;
+        font-size: 1.4rem;
+        padding: .9rem 2.5rem
+    }
+
+    #wrapper > main > #tags {
+        width: 100%;
+        height: fit-content;
+        border-radius: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > #tags a {
+        width: fit-content;
+        padding: .3rem 1rem;
+        display: inline-block;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags .divider {
+        width: fit-content;
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags a:hover {
+        background-color: #f3f3f3
+    }
+
+    #wrapper > main > section {
+        width: 100%;
+        height: fit-content;
+        margin: 0rem
+    }
+
+    #wrapper > main > section > .box {
+        margin-top: 1rem;
+        padding: 1.5rem 2rem
+    }
+
+    #wrapper > main > #morePosts ul > li {
+        width: 100%;
+        text-align: right;
+        display: block;
+        margin: 0rem 0rem .5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem
+    }
+
+    #wrapper > main > #morePosts ul > li > a {
+        width: 100%;
+        text-align: right;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        display: block;
+        color: #3D3D3D;
+        transition: all 100ms
+    }
+
+    #wrapper > main > #morePosts ul > li:hover > a {
+        transition: all 100ms;
+        cursor: pointer;
+        color: #44B649
+    }
+
+    #wrapper > main > #pagination {
+        width: 100%;
+        height: 5rem;
+        background-color: #fff;
+        margin-bottom: 2rem;
+        border-radius: 1.4rem;
+        border: .2rem solid #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: hidden
+    }
+
+    #wrapper > main > #pagination > .page-num {
+        height: 100%;
+        border-right: .2rem solid #F2F2F2;
+        font-size: 1.6rem;
+        padding-top: 1.4rem;
+        flex-grow: 1;
+        color: #3D3D3D;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > main > #pagination > .page-num:first-child {
+        border-right: 0rem
+    }
+
+    #wrapper > main > #pagination > .page-num:hover {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > main > #pagination > .current-page {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > main > #pagination > .current-page:hover {
+        background-color: #44B649
+    }
+
+    footer {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        background-color: #313131
+    }
+
+    footer > .footer-section {
+        width: 100%;
+        height: fit-content;
+        display: inline-block;
+        border-bottom: .1rem solid #6B6B6B
+    }
+
+    footer > .footer-section:last-child {
+        border-bottom: none
+    }
+
+    footer > #main-footer {
+        padding: 2% 8%
+    }
+
+    footer > #main-footer > div {
+        width: 48%;
+        height: fit-content
+    }
+
+    footer > #main-footer > #map {
+        width: fit-content;
+        float: left;
+        border-radius: 2rem;
+        overflow: hidden
+    }
+
+    footer > #main-footer > #details {
+        float: right
+    }
+
+    footer > #main-footer > #details > #logo-section {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        align-items: center
+    }
+
+    footer > #main-footer > #details > #logo-section > img {
+        width: 6rem;
+        display: inline-block
+    }
+
+    footer > #main-footer > #details > #logo-section > div {
+        display: inline-block;
+        margin-right: 2rem
+    }
+
+    footer > #main-footer > #details > #logo-section > div > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.1rem;
+        text-align: right;
+        color: #fff
+    }
+
+    footer > #main-footer > #details > #logo-section > div > #w-name {
+        font-family: "kBlack_woff";
+        font-size: 5rem
+    }
+
+    footer > #main-footer > #details > #address {
+        font-family: "iyRegular_woff";
+        line-height: 200%;
+        font-size: 1.3rem;
+        color: #fff;
+        text-align: right;
+        margin-top: 3rem
+    }
+
+    footer > #footer-menu {
+        width: 100%;
+        height: fit-content;
+        padding: 1% 8%
+    }
+
+    footer > #footer-menu > ul {
+        width: 100%;
+        text-align: right
+    }
+
+    footer > #footer-menu > ul > li {
+        display: inline-block;
+        padding: .5rem 1.2rem;
+        margin: 0rem 1rem;
+        border-radius: 1rem
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        cursor: pointer;
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        background-color: rgba(0, 0, 0, .13);
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li > a {
+        font-family: "iyLight_woff";
+        font-size: 1.45rem;
+        color: #fff;
+        text-decoration: none
+    }
+
+    footer > #footer-copyright {
+        width: 100%;
+        padding: 1% 8%;
+        font-family: "iyLight_woff";
+        font-size: 1.3rem;
+        text-align: right;
+        background-color: #313131;
+        color: #fff
+    }
+
+    footer > #footer-copyright:hover > a {
+        transition: all 1s;
+        transform: translateX(0rem);
+        opacity: 100%;
+        cursor: pointer
+    }
+
+    footer > #footer-copyright > a {
+        transition: all 1s;
+        color: #fff;
+        background-color: #ECBD20;
+        padding: .4rem .8rem;
+        margin-right: 1rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        display: inline-block;
+        transform: translateX(5rem);
+        opacity: 0%
+    }
+
+    #wrapper > .page-title {
+        width: 100%;
+        text-align: right;
+        font-size: 2.9rem;
+        font-family: "iyExtraBold_woff";
+        color: #3D3D3D;
+        margin: 0 0 3rem
+    }
+
+    #wrapper > .gallery-item {
+        width: 100%;
+        height: fit-content;
+        margin: 1.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > img {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem;
+        color: #3D3D3D;
+        margin-right: 1.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li {
+        width: 32%;
+        height: 16rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 2%;
+        border-radius: 2rem;
+        float: right
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:nth-of-type(3n+3) {
+        margin-left: 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > img {
+        width: 100%;
+        height: 140%;
+        transform: translateY(-6rem);
+        object-fit: cover
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        opacity: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(68, 182, 73, .95);
+        z-index: 32000
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > .nextArr {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > span {
+        width: 70%;
+        font-family: "iyBold_woff";
+        font-size: 2rem;
+        color: #fff;
+        text-align: left
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info {
+        opacity: 100%;
+        transition: all 500ms;
+        cursor: pointer
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info > .nextArr {
+        -webkit-animation: nexArrAnim;
+        -o-animation: nexArrAnim;
+        animation: nexArrAnim;
+        animation-delay: 500ms;
+        -moz-animation-delay: 500ms;
+        -o-animation-delay: 500ms;
+        -webkit-animation-delay: 500ms;
+        animation-duration: 500ms;
+        -o-animation-duration: 500ms;
+        -webkit-animation-duration: 500ms;
+        -moz-animation-duration: 500ms;
+        animation-fill-mode: forwards
+    }
+
+    @keyframes nexArrAnim {
+        from {
+            transform: translateX(0rem)
+        }
+        to {
+            transform: translateX(1rem)
+        }
+    }#wrapper > #faq-body {
+         width: 100%;
+         height: fit-content;
+         display: inline-block;
+         margin-bottom: 5rem
+     }
+
+    #wrapper > #faq-body > ul {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        border: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-bottom: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > span {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > img {
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 2.5rem
+    }
+
+    #wrapper > #faq-body > ul > li:last-child {
+        border-bottom: none
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-answer {
+        display: none;
+        font-family: "iyLight_woff";
+        font-size: 1.6rem;
+        color: #282828;
+        padding: 2rem 1.5rem;
+        background-color: #fcfcfc
+    }
+
+    #wrapper > #page-content {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 0rem 5rem
+    }
+
+    #wrapper > #page-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #313131;
+        margin: 1rem 0rem
+    }
+
+    #wrapper > #page-content h1 {
+        font-family: "iyExtraBold_woff";
+        font-size: 4rem
+    }
+
+    #wrapper > #page-content h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 3rem
+    }
+
+    #wrapper > #page-content h3 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2.5rem
+    }
+
+    #wrapper > #page-content p {
+        font-size: 1.4rem
+    }
+
+    #wrapper > #page-content strong {
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content .hint {
+        background-color: rgba(236, 189, 32, .4);
+        color: rgba(35, 35, 35, .85);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin: 1rem 0rem;
+        display: inline-block
+    }
+
+    #wrapper > #page-content .number-link {
+        width: fit-content;
+        display: block;
+        direction: ltr;
+        border: .2rem solid #44B649;
+        padding: .6rem 2rem;
+        border-radius: 5rem;
+        color: #343434;
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        margin: 1.1rem 0rem
+    }
+
+    #wrapper > #page-content > .numbersSection-title {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem;
+        margin-top: 1.5rem
+    }
+
+    #wrapper > #page-content > .contact-box {
+        width: 100%;
+        height: fit-content;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 5rem;
+        background-color: rgb(250, 250, 250)
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        padding: 2rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header > h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 5rem 2rem;
+        text-align: center
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > #map {
+        width: 35rem;
+        height: 20.3rem;
+        display: block;
+        margin: auto;
+        border-radius: 2rem;
+        overflow: hidden
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link {
+        width: 30%;
+        margin-left: 2.3rem;
+        display: inline-block;
+        height: fit-content;
+        padding: .5rem 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 3rem;
+        color: #44B649;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:last-child {
+        margin-left: 0rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link {
+        flex-grow: 1;
+        height: fit-content;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.7rem;
+        color: #9B4BAE;
+        border-color: #9B4BAE;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link:hover {
+        background-color: #9B4BAE;
+        color: #fff
+    }
+
+    #wrapper > #preview {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        display: block;
+        background-color: rgba(0, 0, 0, .87);
+        z-index: 500000;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box {
+        width: 60%;
+        background-color: lightgray;
+        display: block;
+        margin: 6% auto;
+        border-radius: 2rem;
+        overflow: hidden;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
+    #wrapper > #preview > #close-icn {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        filter: invert(100%);
+        border-radius: 5rem;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, .16)
+    }
+
+    #wrapper > #preview > #close-icn:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, .25)
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        position: relative
+    }
+
+    ._button {
+        width: fit-content;
+        height: fit-content;
+        padding: .5rem 1.6rem;
+        border-radius: 5rem;
+        font-family: "iyBold_woff";
+        font-size: 1.3rem;
+        text-decoration: none
+    }
+
+    ._button:hover {
+        cursor: pointer
+    }
+
+    .high-emphasis {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    .high-emphasis:hover {
+        background-color: #3ba140
+    }
+
+    .med-emphasis {
+        border: .25rem solid #44B649;
+        color: #44B649
+    }
+
+    .med-emphasis:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper {
+        width: 85%;
+        height: fit-content;
+        display: inline-block;
+        margin-right: 7.5%
+    }
+
+    header {
+        width: 100%;
+        height: 13.5rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem
+    }
+
+    header > .header-section {
+        height: fit-content;
+        display: inline-block
+    }
+
+    header > #nav-menu {
+        width: 35%;
+        height: fit-content
+    }
+
+    header > #nav-menu > #nav-icon {
+        width: 3rem;
+        height: 3rem
+    }
+
+    header > #nav-menu > #nav-icon:hover {
+        cursor: pointer
+    }
+
+    header > #nav-menu > #nav-icon > img {
+        width: 70%;
+        height: 70%;
+        margin: 15%
+    }
+
+    header > #nav-menu > #bl-filter {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        background-color: #000;
+        opacity: 80%;
+        display: none;
+        z-index: 15000
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header {
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        position: relative
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header > img {
+        height: 90%
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header > #menu-close {
+        width: 1.6rem;
+        height: 1.6rem;
+        position: absolute;
+        right: 2rem
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header > #menu-close:hover {
+        cursor: pointer
+    }
+
+    header > #nav-menu > #mobile-menu {
+        width: 35%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: -.5rem 0rem 5rem -2rem rgba(38, 38, 38, .58);
+        background-color: #fff;
+        border-left: .25rem solid #F2F2F2;
+        z-index: 2500000000;
+        opacity: 0%;
+        transform: translateX(115%)
+    }
+
+    @keyframes mobileMenuAppearAnim {
+        from {
+            transform: translateX(115%);
+            opacity: 80%
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 100%
+        }
+    }@keyframes mobileMenuDisApearAnim {
+         from {
+             transform: translateX(0%);
+             opacity: 100%
+         }
+         to {
+             transform: translateX(115%);
+             opacity: 80%
+         }
+     }header > #nav-menu > #mobile-menu > ul {
+          width: 100%;
+          height: fit-content;
+          margin-top: 2rem
+      }
+
+    header > #nav-menu > #mobile-menu > ul > li {
+        width: 100%;
+        height: 4.5rem;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        text-align: center;
+        transition: all 400ms
+    }
+
+    header > #nav-menu > #mobile-menu > ul > li:hover {
+        background-color: whitesmoke;
+        transition: all 400ms
+    }
+
+    header > #nav-menu > #mobile-menu > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #131313;
+        padding: 1.3rem 0rem
+    }
+
+    header > #logo-section {
+        width: 30%
+    }
+
+    header > #logo-section > img {
+        width: 5.5rem;
+        display: inline-block
+    }
+
+    header > #logo-section > div, header > #logo-section > h2 {
+        width: fit-content;
+        display: inline-block;
+        margin-right: 1.5rem
+    }
+
+    header > #logo-section span {
+        display: block;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem;
+        color: #44B649;
+        text-align: right
+    }
+
+    header > #logo-section #w-name {
+        font-family: "kBlack_woff";
+        font-size: 4rem
+    }
+
+    header > #menu {
+        width: 60%;
+        display: none
+    }
+
+    header > #menu > ul {
+        width: 100%;
+        height: fit-content
+    }
+
+    header > #menu > ul > li {
+        width: fit-content;
+        margin: 0rem .7rem;
+        padding: .5rem 1.2rem;
+        display: inline-block;
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        border-radius: .5rem;
+        overflow: hidden
+    }
+
+    header > #menu > ul > li:hover {
+        cursor: pointer
+    }
+
+    header > #menu > ul > li:hover > a {
+        transition: all 250ms;
+        font-family: "iyBold_woff";
+        color: #44B649;
+        cursor: pointer
+    }
+
+    header > #menu > ul > li > a {
+        text-decoration: none;
+        color: #3B3B3B
+    }
+
+    header > #reseption-section {
+        width: 35%;
+        text-align: left !important
+    }
+
+    #wrapper > .box {
+        margin: 3rem 0rem
+    }
+
+    #wrapper > .green-box {
+        width: 100%;
+        height: fit-content;
+        background-color: #44B649;
+        border-radius: 2rem
+    }
+
+    #wrapper > .section-title {
+        display: flex;
+        align-items: center;
+        margin: 4rem 0rem 3rem
+    }
+
+    #wrapper > .section-title > .section-bullet, #wrapper > .section-title > h2 {
+        display: inline-block
+    }
+
+    #wrapper > .section-title > .section-bullet {
+        width: 2.3rem;
+        height: 2.3rem
+    }
+
+    #wrapper > .section-title > h2 {
+        font-family: "kBlack_woff";
+        font-size: 3.4rem;
+        margin-right: 1.2rem;
+        color: #FFD23E
+    }
+
+    #wrapper > .grid-section {
+        margin: 0
+    }
+
+    #wrapper > .grid-section, #wrapper > .grid-section > ul {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li {
+        width: 47%;
+        height: 16rem;
+        margin-left: 6%;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
+        display: inline-block;
+        float: right;
+        padding: 2rem;
+        border: .35rem solid #F8F8F8;
+        transform: scale(1);
+        transition: all 500ms;
+        background-color: #fff
+    }
+
+    #wrapper > .grid-section > ul > li:nth-of-type(2n+2) {
+        margin-left: 0%
+    }
+
+    #wrapper > .grid-section > ul > li:hover {
+        cursor: pointer;
+        border-color: #44B649;
+        transition: all 500ms;
+        transform: scale(1.05)
+    }
+
+    #wrapper > .grid-section > ul > li:hover > .grid-head > img {
+        transition: all 500ms;
+        filter: grayscale(0%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head {
+        width: 91%;
+        height: 50%;
+        margin: 0rem 4.5% 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > * {
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > img {
+        height: 75%;
+        filter: grayscale(100%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > p {
+        font-family: "iyBold_woff";
+        font-size: 1.9rem;
+        margin-right: 10%
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-body {
+        height: 60%;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 200%;
+        color: #3D3D3D
+    }
+
+    #wrapper > #top-head {
+        height: 23rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 6rem
+    }
+
+    #wrapper > #top-head > img {
+        height: 140%;
+        position: absolute;
+        bottom: 0;
+        right: 0rem;;
+        float: right
+    }
+
+    #wrapper > #top-head > #head-details {
+        width: 55%;
+        height: fit-content;
+        position: absolute;
+        left: 0rem
+    }
+
+    #wrapper > #top-head > #head-details > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #fff;
+        display: block;
+        text-align: right
+    }
+
+    #wrapper > #top-head > #head-details > p > strong {
+        font-weight: 400;
+        font-family: "iyRegular_woff";
+        font-size: 1.8rem
+    }
+
+    #wrapper > #top-head > #head-details > .w-name {
+        font-family: "kBlack_woff";
+        font-size: 8rem
+    }
+
+    #wrapper > #ep-reception-box {
+        height: 11rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > #ep-reception-box > div {
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative
+    }
+
+    #wrapper > #ep-reception-box > div > * {
+        display: inline-block;
+        position: absolute
+    }
+
+    #wrapper > #ep-reception-box > div > p {
+        width: fit-content;
+        font-family: "iyBold_woff";
+        font-size: 1.7rem;
+        color: #fff;
+        right: 0rem
+    }
+
+    #wrapper > #ep-reception-box > div > ._button {
+        width: fit-content;
+        font-size: 1.5rem;
+        padding: 1rem 2.2rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        left: 0rem;
+        color: #44B649;
+        transition: all 500ms
+    }
+
+    #wrapper > #ep-reception-box > div > ._button:hover {
+        box-shadow: 0rem 1rem 2rem .4rem rgba(0, 0, 0, .17);
+        transition: all 500ms;
+        transform: translateY(-.5rem)
+    }
+
+    #wrapper > #gallery-box {
+        height: 17rem
+    }
+
+    #wrapper > #gallery-box > * {
+        display: inline-block
+    }
+
+    #wrapper > #gallery-box > div {
+        width: 35rem;
+        height: fit-content
+    }
+
+    #wrapper > #gallery-box > div > p {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        float: right;
+        line-height: 210%;
+        text-align: right
+    }
+
+    #wrapper > #gallery-box > div > ._button {
+        margin-top: 1rem;
+        display: inline-block
+    }
+
+    #wrapper > #gallery-box > img {
+        height: 100%;
+        float: left;
+        object-fit: fill;
+        border-radius: 2rem
+    }
+
+    #wrapper > aside, #wrapper > main {
+        display: block;
+        float: right
+    }
+
+    #wrapper > aside {
+        width: 37%;
+        height: fit-content;
+        margin-bottom: 5rem
+    }
+
+    #wrapper > aside > .side-box {
+        height: fit-content;
+        border-radius: 2rem;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > aside > .side-box:first-child {
+        margin: 0rem 0rem 2.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-title {
+        width: 100%;
+        font-family: "iyExtraBold_woff";
+        font-size: 1.6rem;
+        text-align: right;
+        color: #3D3D3D;
+        margin-bottom: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body {
+        width: 100%;
+        height: fit-content
+    }
+
+    #wrapper > aside > .side-box > .box-body > a > img {
+        width: 100%;
+        display: block;
+        border-radius: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box {
+        width: 100%;
+        height: 4.5rem;
+        display: block;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: #F2F2F2 solid .2rem;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #000
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box::placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-moz-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-ms-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-webkit-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box:-moz-placeholder {
+        color: #B1B1B1
+    }
+
+    #wrapper > aside > .side-box > .box-body > .search-box {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul {
+        width: 100%;
+        height: fit-content;
+        border: #F2F2F2 solid .2rem;
+        border-radius: 2rem;
+        background-color: #FFF
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li {
+        width: 100%;
+        height: 9rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > * {
+        display: inline-block
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        margin-right: 1.5rem;
+        float: right;
+        border-radius: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body {
+        width: 100%;
+        margin-right: 2rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > span {
+        width: 100%;
+        display: block;
+        text-align: right;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-title {
+        color: #3D3D3D;
+        margin-bottom: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-views {
+        color: #9B9B9B;
+        font-family: "iyLight_woff"
+    }
+
+    #wrapper > main {
+        width: 60%;
+        height: fit-content;
+        margin-left: 3%;
+        display: inline-block
+    }
+
+    #wrapper > main > .box, #wrapper > main > section > .box {
+        border: .2rem solid #F2F2F2;
+        border-radius: 1rem;
+        padding: 1.5rem 3rem;
+        margin: 3rem 0rem
+    }
+
+    #wrapper > main > section > h3, #wrapper > main > .box > .section-title {
+        width: 100%;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem
+    }
+
+    #wrapper > main > article {
+        width: 100%;
+        height: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article:first-child {
+        margin-top: 0rem
+    }
+
+    #wrapper > main > article > .art-head {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > article > .art-head > a {
+        width: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article > .art-head > a > h2, #wrapper > main > article > .art-head > a > h1 {
+        width: fit-content;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem;
+        color: #3D3D3D
+    }
+
+    #wrapper > main > article > .art-head > .more {
+        width: 100%;
+        height: 3rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item {
+        width: fit-content;
+        height: 100%;
+        margin-left: 2rem;
+        display: flex;
+        float: right;
+        align-items: center;
+        margin-top: .6rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > img {
+        height: 50%;
+        opacity: 30%;
+        margin-left: 1rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > span {
+        color: #9B9B9B;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem
+    }
+
+    #wrapper > main > article > .art-cover {
+        width: 100%;
+        border-radius: 2rem
+    }
+
+    #wrapper > main > article > .art-summary, #wrapper > main > article > .art-content {
+        margin: 2rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > *, #wrapper > main > article > .art-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.31rem;
+        line-height: 200%;
+        text-align: justify
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-summary > h4, #wrapper > main > article > .art-content > h2, #wrapper > main > article > .art-content > h3, #wrapper > main > article > .art-content > h4 {
+        font-family: "iyBold_woff";
+        margin: 1rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-content > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 1.9rem
+    }
+
+    #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-content > h3 {
+        font-size: 1.55rem
+    }
+
+    #wrapper > main > article > .art-footer {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > main > article > .art-footer > ._button {
+        border-radius: .8rem;
+        float: left;
+        font-size: 1.4rem;
+        padding: .9rem 2.5rem
+    }
+
+    #wrapper > main > #tags {
+        width: 100%;
+        height: fit-content;
+        border-radius: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > #tags a {
+        width: fit-content;
+        padding: .3rem 1rem;
+        display: inline-block;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags .divider {
+        width: fit-content;
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags a:hover {
+        background-color: #f3f3f3
+    }
+
+    #wrapper > main > section {
+        width: 100%;
+        height: fit-content;
+        margin: 0rem
+    }
+
+    #wrapper > main > section > .box {
+        margin-top: 1rem;
+        padding: 1.5rem 2rem
+    }
+
+    #wrapper > main > #morePosts ul > li {
+        width: 100%;
+        text-align: right;
+        display: block;
+        margin: 0rem 0rem .5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem
+    }
+
+    #wrapper > main > #morePosts ul > li > a {
+        width: 100%;
+        text-align: right;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        display: block;
+        color: #3D3D3D;
+        transition: all 100ms
+    }
+
+    #wrapper > main > #morePosts ul > li:hover > a {
+        transition: all 100ms;
+        cursor: pointer;
+        color: #44B649
+    }
+
+    #wrapper > main > #pagination {
+        width: 100%;
+        height: 5rem;
+        background-color: #fff;
+        margin-bottom: 2rem;
+        border-radius: 1.4rem;
+        border: .2rem solid #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: hidden
+    }
+
+    #wrapper > main > #pagination > .page-num {
+        height: 100%;
+        border-right: .2rem solid #F2F2F2;
+        font-size: 1.6rem;
+        padding-top: 1.4rem;
+        flex-grow: 1;
+        color: #3D3D3D;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > main > #pagination > .page-num:first-child {
+        border-right: 0rem
+    }
+
+    #wrapper > main > #pagination > .page-num:hover {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > main > #pagination > .current-page {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > main > #pagination > .current-page:hover {
+        background-color: #44B649
+    }
+
+    footer {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        background-color: #313131
+    }
+
+    footer > .footer-section {
+        width: 100%;
+        height: fit-content;
+        display: inline-block;
+        border-bottom: .1rem solid #6B6B6B
+    }
+
+    footer > .footer-section:last-child {
+        border-bottom: none
+    }
+
+    footer > #main-footer {
+        padding: 2% 8%
+    }
+
+    footer > #main-footer > div {
+        width: 48%;
+        height: fit-content
+    }
+
+    footer > #main-footer > #map {
+        width: fit-content;
+        float: left;
+        border-radius: 2rem;
+        overflow: hidden
+    }
+
+    footer > #main-footer > #details {
+        float: right
+    }
+
+    footer > #main-footer > #details > #logo-section {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        align-items: center
+    }
+
+    footer > #main-footer > #details > #logo-section > img {
+        width: 5.3rem;
+        display: inline-block
+    }
+
+    footer > #main-footer > #details > #logo-section > div {
+        display: inline-block;
+        margin-right: 1.5rem
+    }
+
+    footer > #main-footer > #details > #logo-section > div > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.1rem;
+        text-align: right;
+        color: #fff
+    }
+
+    footer > #main-footer > #details > #logo-section > div > #w-name {
+        font-family: "kBlack_woff";
+        font-size: 4rem
+    }
+
+    footer > #main-footer > #details > #address {
+        font-family: "iyRegular_woff";
+        line-height: 200%;
+        font-size: 1.3rem;
+        color: #fff;
+        text-align: right;
+        margin-top: 3rem
+    }
+
+    footer > #footer-menu {
+        width: 100%;
+        height: fit-content;
+        padding: 1% 8%
+    }
+
+    footer > #footer-menu > ul {
+        width: 100%;
+        text-align: center
+    }
+
+    footer > #footer-menu > ul > li {
+        display: inline-block;
+        padding: .5rem 1.2rem;
+        margin: 0rem 1rem;
+        border-radius: 1rem
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        cursor: pointer;
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        background-color: rgba(0, 0, 0, .13);
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li > a {
+        font-family: "iyLight_woff";
+        font-size: 1.45rem;
+        color: #fff;
+        text-decoration: none
+    }
+
+    footer > #footer-copyright {
+        width: 100%;
+        padding: 1% 8%;
+        font-family: "iyLight_woff";
+        font-size: 1.3rem;
+        text-align: right;
+        background-color: #313131;
+        color: #fff
+    }
+
+    footer > #footer-copyright:hover > a {
+        transition: all 1s;
+        transform: translateX(0rem);
+        opacity: 100%;
+        cursor: pointer
+    }
+
+    footer > #footer-copyright > a {
+        transition: all 1s;
+        color: #fff;
+        background-color: #ECBD20;
+        padding: .4rem .8rem;
+        margin-right: 1rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        display: inline-block;
+        transform: translateX(5rem);
+        opacity: 0%
+    }
+
+    #wrapper > .page-title {
+        width: 100%;
+        text-align: right;
+        font-size: 2.7rem;
+        font-family: "iyExtraBold_woff";
+        color: #3D3D3D;
+        margin: 0 0 3rem
+    }
+
+    #wrapper > .gallery-item {
+        width: 100%;
+        height: fit-content;
+        margin: 1.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > img {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem;
+        color: #3D3D3D;
+        margin-right: 1.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li {
+        width: 32%;
+        height: 16rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 2%;
+        border-radius: 2rem;
+        float: right
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:nth-of-type(3n+3) {
+        margin-left: 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > img {
+        width: 100%;
+        height: 140%;
+        transform: translateY(-6rem);
+        object-fit: cover
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        opacity: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(68, 182, 73, .95);
+        z-index: 32000
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > .nextArr {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > span {
+        width: 70%;
+        font-family: "iyBold_woff";
+        font-size: 2rem;
+        color: #fff;
+        text-align: left
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info {
+        opacity: 100%;
+        transition: all 500ms;
+        cursor: pointer
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info > .nextArr {
+        -webkit-animation: nexArrAnim;
+        -o-animation: nexArrAnim;
+        animation: nexArrAnim;
+        animation-delay: 500ms;
+        -moz-animation-delay: 500ms;
+        -o-animation-delay: 500ms;
+        -webkit-animation-delay: 500ms;
+        animation-duration: 500ms;
+        -o-animation-duration: 500ms;
+        -webkit-animation-duration: 500ms;
+        -moz-animation-duration: 500ms;
+        animation-fill-mode: forwards
+    }
+
+    @keyframes nexArrAnim {
+        from {
+            transform: translateX(0rem)
+        }
+        to {
+            transform: translateX(1rem)
+        }
+    }#wrapper > #faq-body {
+         width: 100%;
+         height: fit-content;
+         display: inline-block;
+         margin-bottom: 5rem
+     }
+
+    #wrapper > #faq-body > ul {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        border: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-bottom: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > span {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > img {
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 2.5rem
+    }
+
+    #wrapper > #faq-body > ul > li:last-child {
+        border-bottom: none
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-answer {
+        display: none;
+        font-family: "iyLight_woff";
+        font-size: 1.6rem;
+        color: #282828;
+        padding: 2rem 1.5rem;
+        background-color: #fcfcfc
+    }
+
+    #wrapper > #page-content {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 0rem 5rem
+    }
+
+    #wrapper > #page-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #313131;
+        margin: 1rem 0rem;
+        line-height: 200%
+    }
+
+    #wrapper > #page-content h1 {
+        font-family: "iyExtraBold_woff";
+        font-size: 4rem
+    }
+
+    #wrapper > #page-content h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 3rem
+    }
+
+    #wrapper > #page-content h3 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2.5rem
+    }
+
+    #wrapper > #page-content p {
+        font-size: 1.4rem
+    }
+
+    #wrapper > #page-content strong {
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content .hint {
+        background-color: rgba(236, 189, 32, .4);
+        color: rgba(35, 35, 35, .85);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin: 1rem 0rem;
+        display: inline-block
+    }
+
+    #wrapper > #page-content .number-link {
+        width: fit-content;
+        display: block;
+        direction: ltr;
+        border: .2rem solid #44B649;
+        padding: .6rem 2rem;
+        border-radius: 5rem;
+        color: #343434;
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        margin: 1.1rem 0rem
+    }
+
+    #wrapper > #page-content > .numbersSection-title {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem;
+        margin-top: 1.5rem
+    }
+
+    #wrapper > #page-content > .contact-box {
+        width: 100%;
+        height: fit-content;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 5rem;
+        background-color: rgb(250, 250, 250)
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        padding: 2rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header > h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 3.5rem 2rem;
+        text-align: center
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > #map {
+        width: 35rem;
+        height: 20.3rem;
+        display: block;
+        margin: auto;
+        border-radius: 2rem;
+        overflow: hidden
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link {
+        width: fit-content;
+        margin-left: 1.8rem;
+        display: inline-block;
+        height: fit-content;
+        padding: .5rem 2.4rem;
+        text-align: center;
+        font-size: 1.55rem;
+        border-radius: 3rem;
+        color: #44B649;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:last-child {
+        margin-left: 0rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link {
+        flex-grow: 1;
+        height: fit-content;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.7rem;
+        color: #9B4BAE;
+        border-color: #9B4BAE;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link:hover {
+        background-color: #9B4BAE;
+        color: #fff
+    }
+
+    #wrapper > #preview {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        display: block;
+        background-color: rgba(0, 0, 0, .87);
+        z-index: 500000;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box {
+        width: 70%;
+        background-color: lightgray;
+        display: block;
+        margin: 15% auto;
+        border-radius: 2rem;
+        overflow: hidden;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
+    #wrapper > #preview > #close-icn {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        filter: invert(100%);
+        border-radius: 5rem;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, .16)
+    }
+
+    #wrapper > #preview > #close-icn:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, .25)
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+        position: relative
+    }
+
+    ._button {
+        width: fit-content;
+        height: fit-content;
+        padding: .5rem 1.6rem;
+        border-radius: 5rem;
+        font-family: "iyBold_woff";
+        font-size: 1.3rem;
+        text-decoration: none
+    }
+
+    ._button:hover {
+        cursor: pointer
+    }
+
+    .high-emphasis {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    .high-emphasis:hover {
+        background-color: #3ba140
+    }
+
+    .med-emphasis {
+        border: .25rem solid #44B649;
+        color: #44B649
+    }
+
+    .med-emphasis:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper {
+        width: 85%;
+        height: fit-content;
+        display: inline-block;
+        margin-right: 7.5%
+    }
+
+    header {
+        width: 100%;
+        height: 13.5rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem
+    }
+
+    header > .header-section {
+        height: fit-content;
+        display: inline-block
+    }
+
+    header > #nav-menu {
+        width: 30%;
+        height: fit-content
+    }
+
+    header > #nav-menu > #nav-icon {
+        width: 3rem;
+        height: 3rem
+    }
+
+    header > #nav-menu > #nav-icon:hover {
+        cursor: pointer
+    }
+
+    header > #nav-menu > #nav-icon > img {
+        width: 70%;
+        height: 70%;
+        margin: 15%
+    }
+
+    header > #nav-menu > #bl-filter {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        background-color: #000;
+        opacity: 80%;
+        display: none;
+        z-index: 15000
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header {
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        position: relative
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header > img {
+        height: 90%
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header > #menu-close {
+        width: 1.6rem;
+        height: 1.6rem;
+        position: absolute;
+        right: 2rem
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header > #menu-close:hover {
+        cursor: pointer
+    }
+
+    header > #nav-menu > #mobile-menu {
+        width: 45%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: -.5rem 0rem 5rem -2rem rgba(38, 38, 38, .58);
+        background-color: #fff;
+        border-left: .25rem solid #F2F2F2;
+        z-index: 2500000000;
+        opacity: 0%;
+        transform: translateX(115%)
+    }
+
+    @keyframes mobileMenuAppearAnim {
+        from {
+            transform: translateX(115%);
+            opacity: 80%
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 100%
+        }
+    }@keyframes mobileMenuDisApearAnim {
+         from {
+             transform: translateX(0%);
+             opacity: 100%
+         }
+         to {
+             transform: translateX(115%);
+             opacity: 80%
+         }
+     }header > #nav-menu > #mobile-menu > ul {
+          width: 100%;
+          height: fit-content;
+          margin-top: 2rem
+      }
+
+    header > #nav-menu > #mobile-menu > ul > li {
+        width: 100%;
+        height: 4.5rem;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        text-align: center;
+        transition: all 400ms
+    }
+
+    header > #nav-menu > #mobile-menu > ul > li:hover {
+        background-color: whitesmoke;
+        transition: all 400ms
+    }
+
+    header > #nav-menu > #mobile-menu > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #131313;
+        padding: 1.3rem 0rem
+    }
+
+    header > #logo-section {
+        width: 40%
+    }
+
+    header > #logo-section > img {
+        width: 5rem;
+        display: inline-block
+    }
+
+    header > #logo-section > div, header > #logo-section > h2 {
+        width: fit-content;
+        display: inline-block;
+        margin-right: 1rem
+    }
+
+    header > #logo-section span {
+        display: block;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem;
+        color: #44B649;
+        text-align: right
+    }
+
+    header > #logo-section #w-name {
+        font-family: "kBlack_woff";
+        font-size: 4rem
+    }
+
+    header > #menu {
+        width: 55%;
+        display: none
+    }
+
+    header > #reseption-section {
+        width: 30%;
+        text-align: left !important
+    }
+
+    #wrapper > .box {
+        margin: 3rem 0rem
+    }
+
+    #wrapper > .green-box {
+        width: 100%;
+        height: fit-content;
+        background-color: #44B649;
+        border-radius: 2rem
+    }
+
+    #wrapper > .section-title {
+        display: flex;
+        align-items: center;
+        margin: 4rem 0rem 3rem
+    }
+
+    #wrapper > .section-title > .section-bullet, #wrapper > .section-title > h2 {
+        display: inline-block
+    }
+
+    #wrapper > .section-title > .section-bullet {
+        width: 2.3rem;
+        height: 2.3rem
+    }
+
+    #wrapper > .section-title > h2 {
+        font-family: "kBlack_woff";
+        font-size: 3.1rem;
+        margin-right: 1.2rem;
+        color: #FFD23E
+    }
+
+    #wrapper > .grid-section {
+        margin: 0
+    }
+
+    #wrapper > .grid-section, #wrapper > .grid-section > ul {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li {
+        width: 100%;
+        height: 13rem;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
+        display: block;
+        padding: 2rem;
+        border: .35rem solid #F8F8F8;
+        transform: scale(1);
+        transition: all 500ms;
+        background-color: #fff
+    }
+
+    #wrapper > .grid-section > ul > li:last-child {
+        margin-bottom: 0rem
+    }
+
+    #wrapper > .grid-section > ul > li:hover {
+        cursor: pointer;
+        border-color: #44B649;
+        transition: all 500ms;
+        transform: scale(1.05)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head {
+        width: 91%;
+        height: 50%;
+        margin: 0rem 4.5% 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > * {
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li:hover > .grid-head > img {
+        transition: all 500ms;
+        filter: grayscale(0%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > img {
+        height: 90%;
+        filter: grayscale(100%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > p {
+        font-family: "iyBold_woff";
+        font-size: 1.9rem;
+        margin-right: 3%
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-body {
+        height: 60%;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 200%;
+        color: #3D3D3D
+    }
+
+    #wrapper > #top-head {
+        height: 35rem;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-top: 6rem
+    }
+
+    #wrapper > #top-head > img {
+        height: 31rem;
+        position: absolute;
+        top: -12rem;
+        right: 50%;
+        transform: translateX(50%);
+        display: block
+    }
+
+    #wrapper > #top-head > #head-details {
+        width: fit-content;
+        position: absolute;
+        bottom: 2.5rem;
+        right: 50%;
+        transform: translateX(50%);
+        height: fit-content
+    }
+
+    #wrapper > #top-head > #head-details > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #fff;
+        display: block;
+        text-align: center
+    }
+
+    #wrapper > #top-head > #head-details > p > strong {
+        font-weight: 400;
+        font-family: "iyRegular_woff";
+        font-size: 1.8rem
+    }
+
+    #wrapper > #top-head > #head-details > .w-name {
+        font-family: "kBlack_woff";
+        font-size: 7rem
+    }
+
+    #wrapper > #ep-reception-box {
+        height: 11rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > #ep-reception-box > div {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative
+    }
+
+    #wrapper > #ep-reception-box > div > * {
+        display: inline-block;
+        position: absolute
+    }
+
+    #wrapper > #ep-reception-box > div > p {
+        width: fit-content;
+        font-family: "iyBold_woff";
+        font-size: 1.7rem;
+        color: #fff;
+        right: 0rem
+    }
+
+    #wrapper > #ep-reception-box > div > ._button {
+        width: fit-content;
+        font-size: 1.5rem;
+        padding: 1rem 2.2rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        left: 0rem;
+        color: #44B649;
+        transition: all 500ms
+    }
+
+    #wrapper > #ep-reception-box > div > ._button:hover {
+        box-shadow: 0rem 1rem 2rem .4rem rgba(0, 0, 0, .17);
+        transition: all 500ms;
+        transform: translateY(-.5rem)
+    }
+
+    #wrapper > #gallery-box {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > #gallery-box > img {
+        width: 70%;
+        height: 16rem;
+        border-radius: 2rem;
+        order: 1
+    }
+
+    #wrapper > #gallery-box > div {
+        width: 100%;
+        height: fit-content;
+        order: 2;
+        margin-top: 2rem
+    }
+
+    #wrapper > #gallery-box > div > p {
+        width: 100%;
+        height: fit-content;
+        text-align: right;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        line-height: 210%;
+        text-align: right;
+        margin-bottom: 1rem
+    }
+
+    #wrapper > #gallery-box > div > ._button {
+        display: block
+    }
+
+    #wrapper > aside, #wrapper > main {
+        width: 100%;
+        display: block
+    }
+
+    #wrapper > aside {
+        height: fit-content;
+        margin-bottom: 5rem;
+        display: none
+    }
+
+    #wrapper > aside > .side-box {
+        height: fit-content;
+        border-radius: 2rem;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > aside > .side-box:first-child {
+        margin: 0rem 0rem 2.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-title {
+        width: 100%;
+        font-family: "iyExtraBold_woff";
+        font-size: 1.9rem;
+        text-align: right;
+        color: #3D3D3D;
+        margin-bottom: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body {
+        width: 100%;
+        height: fit-content
+    }
+
+    #wrapper > aside > .side-box > .box-body > a > img {
+        width: 100%;
+        display: block;
+        border-radius: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box {
+        width: 100%;
+        height: 4.5rem;
+        display: block;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: #F2F2F2 solid .2rem;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #000
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box::placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-moz-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-ms-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-webkit-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box:-moz-placeholder {
+        color: #B1B1B1
+    }
+
+    #wrapper > aside > .side-box > .box-body > .search-box {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul {
+        width: 100%;
+        height: fit-content;
+        border: #F2F2F2 solid .2rem;
+        border-radius: 2rem;
+        background-color: #FFF
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li {
+        width: 100%;
+        height: 9rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > * {
+        display: inline-block
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        margin-right: 1.5rem;
+        float: right;
+        border-radius: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body {
+        width: 100%;
+        margin-right: 2rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > span {
+        width: 100%;
+        display: block;
+        text-align: right;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-title {
+        color: #3D3D3D;
+        margin-bottom: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-views {
+        color: #9B9B9B;
+        font-family: "iyLight_woff"
+    }
+
+    #wrapper > main {
+        height: fit-content;
+        margin-left: 3%;
+        display: inline-block
+    }
+
+    #wrapper > main > .box, #wrapper > main > section > .box {
+        border: .2rem solid #F2F2F2;
+        border-radius: 1rem;
+        padding: 1.5rem 3rem;
+        margin: 3rem 0rem
+    }
+
+    #wrapper > main > section > h3, #wrapper > main > .box > .section-title {
+        width: 100%;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem
+    }
+
+    #wrapper > main > article {
+        width: 100%;
+        height: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article:first-child {
+        margin-top: 0rem
+    }
+
+    #wrapper > main > article > .art-head {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > article > .art-head > a {
+        width: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article > .art-head > a > h2, #wrapper > main > article > .art-head > a > h1 {
+        width: fit-content;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2.2rem;
+        color: #3D3D3D
+    }
+
+    #wrapper > main > article > .art-head > .more {
+        width: 100%;
+        height: 3rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item {
+        width: fit-content;
+        height: 100%;
+        margin-left: 5rem;
+        display: flex;
+        float: right;
+        align-items: center;
+        margin-top: .6rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > img {
+        height: 50%;
+        opacity: 30%;
+        margin-left: 1rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > span {
+        color: #9B9B9B;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem
+    }
+
+    #wrapper > main > article > .art-cover {
+        width: 100%;
+        border-radius: 2rem
+    }
+
+    #wrapper > main > article > .art-summary, #wrapper > main > article > .art-content {
+        margin: 2rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > *, #wrapper > main > article > .art-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.35rem;
+        line-height: 200%;
+        text-align: justify
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-summary > h4, #wrapper > main > article > .art-content > h2, #wrapper > main > article > .art-content > h3, #wrapper > main > article > .art-content > h4 {
+        font-family: "iyBold_woff";
+        margin: 1rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-content > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 1.9rem
+    }
+
+    #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-content > h3 {
+        font-size: 1.55rem
+    }
+
+    #wrapper > main > article > .art-footer {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > main > article > .art-footer > ._button {
+        border-radius: .8rem;
+        float: left;
+        font-size: 1.4rem;
+        padding: .9rem 2.5rem
+    }
+
+    #wrapper > main > #tags {
+        width: 100%;
+        height: fit-content;
+        border-radius: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > #tags a {
+        width: fit-content;
+        padding: .3rem 1rem;
+        display: inline-block;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags .divider {
+        width: fit-content;
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags a:hover {
+        background-color: #f3f3f3
+    }
+
+    #wrapper > main > section {
+        width: 100%;
+        height: fit-content;
+        margin: 0rem
+    }
+
+    #wrapper > main > section > .box {
+        margin-top: 1rem;
+        padding: 1.5rem 2rem
+    }
+
+    #wrapper > main > #morePosts ul > li {
+        width: 100%;
+        text-align: right;
+        display: block;
+        margin: 0rem 0rem .5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem
+    }
+
+    #wrapper > main > #morePosts ul > li > a {
+        width: 100%;
+        text-align: right;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        display: block;
+        color: #3D3D3D;
+        transition: all 100ms
+    }
+
+    #wrapper > main > #morePosts ul > li:hover > a {
+        transition: all 100ms;
+        cursor: pointer;
+        color: #44B649
+    }
+
+    #wrapper > main > #pagination {
+        width: 100%;
+        height: 5rem;
+        background-color: #fff;
+        margin-bottom: 2rem;
+        border-radius: 1.4rem;
+        border: .2rem solid #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: hidden
+    }
+
+    #wrapper > main > #pagination > .page-num {
+        height: 100%;
+        border-right: .2rem solid #F2F2F2;
+        font-size: 1.6rem;
+        padding-top: 1.4rem;
+        flex-grow: 1;
+        color: #3D3D3D;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > main > #pagination > .page-num:first-child {
+        border-right: 0rem
+    }
+
+    #wrapper > main > #pagination > .page-num:hover {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > main > #pagination > .current-page {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > main > #pagination > .current-page:hover {
+        background-color: #44B649
+    }
+
+    footer {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        background-color: #313131
+    }
+
+    footer > .footer-section {
+        width: 100%;
+        height: fit-content;
+        display: inline-block;
+        border-bottom: .1rem solid #6B6B6B
+    }
+
+    footer > .footer-section:last-child {
+        border-bottom: none
+    }
+
+    footer > #main-footer {
+        padding: 2% 8%
+    }
+
+    footer > #main-footer > div {
+        width: 48%;
+        height: fit-content
+    }
+
+    footer > #main-footer > #map {
+        width: fit-content;
+        display: block;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin: auto
+    }
+
+    footer > #main-footer > #details {
+        width: 100%;
+        display: inline-block;
+        margin: 2rem auto;
+        position: relative
+    }
+
+    footer > #main-footer > #details > #logo-section {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    footer > #main-footer > #details > #logo-section > img {
+        width: 7rem;
+        display: inline-block
+    }
+
+    footer > #main-footer > #details > #logo-section > div {
+        display: inline-block;
+        margin-right: 2rem
+    }
+
+    footer > #main-footer > #details > #logo-section > div > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.1rem;
+        text-align: right;
+        color: #fff
+    }
+
+    footer > #main-footer > #details > #logo-section > div > #w-name {
+        font-family: "kBlack_woff";
+        font-size: 5rem
+    }
+
+    footer > #main-footer > #details > #address {
+        font-family: "iyRegular_woff";
+        line-height: 200%;
+        font-size: 1.3rem;
+        color: #fff;
+        text-align: center;
+        text-align: -moz-center;
+        text-align: -webkit-center;
+        margin-top: 3rem
+    }
+
+    footer > #footer-menu {
+        width: 100%;
+        height: fit-content;
+        padding: 1% 8%
+    }
+
+    footer > #footer-menu > ul {
+        width: 100%;
+        text-align: right
+    }
+
+    footer > #footer-menu > ul > li {
+        display: inline-block;
+        padding: .5rem 1.2rem;
+        margin: 0rem 1rem;
+        border-radius: 1rem
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        cursor: pointer;
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        background-color: rgba(0, 0, 0, .13);
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li > a {
+        font-family: "iyLight_woff";
+        font-size: 1.45rem;
+        color: #fff;
+        text-decoration: none
+    }
+
+    footer > #footer-copyright {
+        width: 100%;
+        padding: 1% 8%;
+        font-family: "iyLight_woff";
+        font-size: 1.3rem;
+        text-align: right;
+        background-color: #313131;
+        color: #fff
+    }
+
+    footer > #footer-copyright:hover > a {
+        transition: all 1s;
+        transform: translateX(0rem);
+        opacity: 100%;
+        cursor: pointer
+    }
+
+    footer > #footer-copyright > a {
+        transition: all 1s;
+        color: #fff;
+        background-color: #ECBD20;
+        padding: .4rem .8rem;
+        margin-right: 1rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        display: inline-block;
+        transform: translateX(5rem);
+        opacity: 0%
+    }
+
+    #wrapper > .page-title {
+        width: 100%;
+        text-align: right;
+        font-size: 2.6rem;
+        font-family: "iyExtraBold_woff";
+        color: #3D3D3D;
+        margin: 0 0 3rem
+    }
+
+    #wrapper > .gallery-item {
+        width: 100%;
+        height: fit-content;
+        margin: 1.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > img {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem;
+        color: #3D3D3D;
+        margin-right: 1.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li {
+        width: 47%;
+        height: 14rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 6%;
+        border-radius: 2rem;
+        float: right
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:nth-of-type(2n+2) {
+        margin-left: 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > img {
+        width: 100%;
+        height: 140%;
+        transform: translateY(-6rem);
+        object-fit: cover
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        opacity: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(68, 182, 73, .95);
+        z-index: 32000
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > .nextArr {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > span {
+        width: 50%;
+        font-family: "iyBold_woff";
+        font-size: 1.7rem;
+        color: #fff;
+        text-align: left
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info {
+        opacity: 100%;
+        transition: all 500ms;
+        cursor: pointer
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info > .nextArr {
+        -webkit-animation: nexArrAnim;
+        -o-animation: nexArrAnim;
+        animation: nexArrAnim;
+        animation-delay: 500ms;
+        -moz-animation-delay: 500ms;
+        -o-animation-delay: 500ms;
+        -webkit-animation-delay: 500ms;
+        animation-duration: 500ms;
+        -o-animation-duration: 500ms;
+        -webkit-animation-duration: 500ms;
+        -moz-animation-duration: 500ms;
+        animation-fill-mode: forwards
+    }
+
+    @keyframes nexArrAnim {
+        from {
+            transform: translateX(0rem)
+        }
+        to {
+            transform: translateX(1rem)
+        }
+    }#wrapper > #faq-body {
+         width: 100%;
+         height: fit-content;
+         display: inline-block;
+         margin-bottom: 5rem
+     }
+
+    #wrapper > #faq-body > ul {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        border: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-bottom: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > span {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > img {
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 2.5rem
+    }
+
+    #wrapper > #faq-body > ul > li:last-child {
+        border-bottom: none
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-answer {
+        display: none;
+        font-family: "iyLight_woff";
+        font-size: 1.6rem;
+        color: #282828;
+        padding: 2rem 1.5rem;
+        background-color: #fcfcfc
+    }
+
+    #wrapper > #page-content {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 0rem 5rem
+    }
+
+    #wrapper > #page-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #313131;
+        margin: 1rem 0rem;
+        line-height: 200%
+    }
+
+    #wrapper > #page-content h1 {
+        font-family: "iyExtraBold_woff";
+        font-size: 4rem
+    }
+
+    #wrapper > #page-content h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 3rem
+    }
+
+    #wrapper > #page-content h3 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2.5rem
+    }
+
+    #wrapper > #page-content p {
+        font-size: 1.4rem
+    }
+
+    #wrapper > #page-content strong {
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content .hint {
+        background-color: rgba(236, 189, 32, .4);
+        color: rgba(35, 35, 35, .85);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin: 1rem 0rem;
+        display: inline-block
+    }
+
+    #wrapper > #page-content .number-link {
+        width: fit-content;
+        display: block;
+        direction: ltr;
+        border: .2rem solid #44B649;
+        padding: .6rem 2rem;
+        border-radius: 5rem;
+        color: #343434;
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        margin: 1.1rem 0rem
+    }
+
+    #wrapper > #page-content > .numbersSection-title {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem;
+        margin-top: 1.5rem
+    }
+
+    #wrapper > #page-content > .contact-box {
+        width: 100%;
+        height: fit-content;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 5rem;
+        background-color: rgb(250, 250, 250)
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        padding: 2rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header > h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 3rem 2rem;
+        text-align: right
+    }
+
+    #wrapper > #page-content > .contact-box > .center-box {
+        text-align: center
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > #map {
+        width: 35rem;
+        height: 20.3rem;
+        display: block;
+        margin: auto;
+        border-radius: 2rem;
+        overflow: hidden
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link {
+        width: fit-content;
+        margin-left: 1rem;
+        display: inline-block;
+        height: fit-content;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 3rem;
+        color: #44B649;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:last-child {
+        margin-left: 0rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link {
+        flex-grow: 1;
+        height: fit-content;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.7rem;
+        color: #9B4BAE;
+        border-color: #9B4BAE;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link:hover {
+        background-color: #9B4BAE;
+        color: #fff
+    }
+
+    #wrapper > #preview {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        display: block;
+        background-color: rgba(0, 0, 0, .9);
+        z-index: 500000;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box {
+        width: 85%;
+        background-color: lightgray;
+        display: block;
+        margin: 20% 7.5%;
+        border-radius: 2rem;
+        overflow: hidden;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
+    #wrapper > #preview > #close-icn {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        filter: invert(100%);
+        border-radius: 5rem;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, .16)
+    }
+
+    #wrapper > #preview > #close-icn:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, .25)
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        position: relative
+    }
+
+    ._button {
+        width: fit-content;
+        height: fit-content;
+        padding: .5rem 1.6rem;
+        border-radius: 5rem;
+        font-family: "iyBold_woff";
+        font-size: 1.3rem;
+        text-decoration: none
+    }
+
+    ._button:hover {
+        cursor: pointer
+    }
+
+    .high-emphasis {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    .high-emphasis:hover {
+        background-color: #3ba140
+    }
+
+    .med-emphasis {
+        border: .25rem solid #44B649;
+        color: #44B649
+    }
+
+    .med-emphasis:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper {
+        width: 84%;
+        height: fit-content;
+        display: inline-block;
+        margin-right: 8%
+    }
+
+    header {
+        width: 100%;
+        height: 13.5rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem
+    }
+
+    header > .header-section {
+        height: fit-content;
+        display: inline-block
+    }
+
+    header > #nav-menu {
+        width: 30%;
+        height: fit-content
+    }
+
+    header > #nav-menu > #nav-icon {
+        width: 3rem;
+        height: 3rem
+    }
+
+    header > #nav-menu > #nav-icon:hover {
+        cursor: pointer
+    }
+
+    header > #nav-menu > #nav-icon > img {
+        width: 70%;
+        height: 70%;
+        margin: 15%
+    }
+
+    header > #nav-menu > #bl-filter {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        background-color: #000;
+        opacity: 80%;
+        display: none;
+        z-index: 15000
+    }
+
+    header > #nav-menu > #mobile-menu {
+        width: 65%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: -.5rem 0rem 5rem -2rem rgba(38, 38, 38, .58);
+        background-color: #fff;
+        border-left: .25rem solid #F2F2F2;
+        z-index: 2500000000;
+        opacity: 0%;
+        transform: translateX(115%)
+    }
+
+    @keyframes mobileMenuAppearAnim {
+        from {
+            transform: translateX(115%);
+            opacity: 80%
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 100%
+        }
+    }@keyframes mobileMenuDisApearAnim {
+         from {
+             transform: translateX(0%);
+             opacity: 100%
+         }
+         to {
+             transform: translateX(115%);
+             opacity: 80%
+         }
+     }header > #nav-menu > #mobile-menu > #menu-header {
+          width: 100%;
+          height: 8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 2rem;
+          position: relative
+      }
+
+    header > #nav-menu > #mobile-menu > #menu-header > img {
+        height: 90%
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header > #menu-close {
+        width: 1.6rem;
+        height: 1.6rem;
+        position: absolute;
+        right: 2rem
+    }
+
+    header > #nav-menu > #mobile-menu > #menu-header > #menu-close:hover {
+        cursor: pointer
+    }
+
+    header > #nav-menu > #mobile-menu > ul {
+        width: 100%;
+        height: fit-content;
+        margin-top: 2rem
+    }
+
+    header > #nav-menu > #mobile-menu > ul > li {
+        width: 100%;
+        height: 4.5rem;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        text-align: center;
+        transition: all 400ms
+    }
+
+    header > #nav-menu > #mobile-menu > ul > li:hover {
+        background-color: whitesmoke;
+        transition: all 400ms
+    }
+
+    header > #nav-menu > #mobile-menu > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #131313;
+        padding: 1.3rem 0rem
+    }
+
+    header > #logo-section {
+        width: 65%
+    }
+
+    header > #logo-section > img {
+        width: 5rem;
+        display: inline-block
+    }
+
+    header > #logo-section > div, header > #logo-section > h2 {
+        width: fit-content;
+        display: inline-block;
+        margin-right: 1rem
+    }
+
+    header > #logo-section span {
+        display: block;
+        font-family: "iyLight_woff";
+        font-size: 1.1rem;
+        color: #44B649;
+        text-align: right
+    }
+
+    header > #logo-section #w-name {
+        font-family: "kBlack_woff";
+        font-size: 3.5rem
+    }
+
+    header > #menu {
+        width: 55%;
+        display: none
+    }
+
+    header > #reseption-section {
+        width: 30%;
+        text-align: left;
+        display: none
+    }
+
+    #wrapper > .box {
+        margin: 2rem 0rem
+    }
+
+    #wrapper > .green-box {
+        width: 100%;
+        height: fit-content;
+        background-color: #44B649;
+        border-radius: 2rem
+    }
+
+    #wrapper > .section-title {
+        display: flex;
+        align-items: center;
+        margin: 4rem 0rem 3rem
+    }
+
+    #wrapper > .section-title > .section-bullet, #wrapper > .section-title > h2 {
+        display: inline-block
+    }
+
+    #wrapper > .section-title > .section-bullet {
+        width: 2.3rem;
+        height: 2.3rem
+    }
+
+    #wrapper > .section-title > h2 {
+        font-family: "kBlack_woff";
+        font-size: 3.1rem;
+        margin-right: 1.2rem;
+        color: #FFD23E
+    }
+
+    #wrapper > .grid-section {
+        margin: 0
+    }
+
+    #wrapper > .grid-section, #wrapper > .grid-section > ul {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li {
+        width: 100%;
+        height: 15rem;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        display: block;
+        padding: 2rem;
+        border: .35rem solid #F8F8F8;
+        transform: scale(1);
+        transition: all 500ms;
+        background-color: #fff
+    }
+
+    #wrapper > .grid-section > ul > li:last-child {
+        margin-bottom: 0rem
+    }
+
+    #wrapper > .grid-section > ul > li:hover {
+        cursor: pointer;
+        border-color: #44B649;
+        transition: all 500ms;
+        transform: scale(1.05)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head {
+        width: 91%;
+        height: 50%;
+        margin: 0rem 4.5% 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > * {
+        display: inline-block
+    }
+
+    #wrapper > .grid-section > ul > li:hover > .grid-head > img {
+        transition: all 500ms;
+        filter: grayscale(0%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > img {
+        height: 73%;
+        filter: grayscale(100%)
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-head > p {
+        font-family: "iyBold_woff";
+        font-size: 1.8rem;
+        margin-right: 5%
+    }
+
+    #wrapper > .grid-section > ul > li > .grid-body {
+        height: 60%;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 200%;
+        color: #3D3D3D
+    }
+
+    #wrapper > #top-head {
+        height: 30rem;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-top: 6rem
+    }
+
+    #wrapper > #top-head > img {
+        height: 28rem;
+        position: absolute;
+        top: -12rem;
+        right: 50%;
+        transform: translateX(50%);
+        display: block
+    }
+
+    #wrapper > #top-head > #head-details {
+        width: fit-content;
+        position: absolute;
+        bottom: 2rem;
+        right: 50%;
+        transform: translateX(50%);
+        height: fit-content
+    }
+
+    #wrapper > #top-head > #head-details > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #fff;
+        display: block;
+        text-align: center
+    }
+
+    #wrapper > #top-head > #head-details > p > strong {
+        font-weight: 400;
+        font-family: "iyRegular_woff";
+        font-size: 1.7rem
+    }
+
+    #wrapper > #top-head > #head-details > .w-name {
+        font-family: "kBlack_woff";
+        font-size: 6.5rem
+    }
+
+    #wrapper > #ep-reception-box {
+        height: 11rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > #ep-reception-box > div {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative
+    }
+
+    #wrapper > #ep-reception-box > div > * {
+        display: inline-block;
+        position: absolute
+    }
+
+    #wrapper > #ep-reception-box > div > p {
+        width: fit-content;
+        font-family: "iyBold_woff";
+        font-size: 1.4rem;
+        color: #fff;
+        right: 0rem
+    }
+
+    #wrapper > #ep-reception-box > div > ._button {
+        width: fit-content;
+        font-size: 1.3rem;
+        padding: .7rem 1.4rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        left: 0rem;
+        color: #44B649;
+        transition: all 500ms
+    }
+
+    #wrapper > #ep-reception-box > div > ._button:hover {
+        box-shadow: 0rem 1rem 2rem .4rem rgba(0, 0, 0, .17);
+        transition: all 500ms;
+        transform: translateY(-.5rem)
+    }
+
+    #wrapper > #gallery-box {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    #wrapper > #gallery-box > img {
+        width: 70%;
+        height: 16rem;
+        border-radius: 2rem;
+        order: 1
+    }
+
+    #wrapper > #gallery-box > div {
+        width: 100%;
+        height: fit-content;
+        order: 2;
+        margin-top: 2rem
+    }
+
+    #wrapper > #gallery-box > div > p {
+        width: 100%;
+        height: fit-content;
+        text-align: right;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        line-height: 210%;
+        text-align: right;
+        margin-bottom: 1rem
+    }
+
+    #wrapper > #gallery-box > div > ._button {
+        display: block;
+        margin: auto
+    }
+
+    #wrapper > aside, #wrapper > main {
+        width: 100%;
+        display: block
+    }
+
+    #wrapper > aside {
+        width: 35%;
+        height: fit-content;
+        display: none
+    }
+
+    #wrapper > aside > .side-box {
+        height: fit-content;
+        border-radius: 2rem;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > aside > .side-box:first-child {
+        margin: 0rem 0rem 2.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-title {
+        width: 100%;
+        font-family: "iyExtraBold_woff";
+        font-size: 1.6rem;
+        text-align: right;
+        color: #3D3D3D;
+        margin-bottom: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body {
+        width: 100%;
+        height: fit-content
+    }
+
+    #wrapper > aside > .side-box > .box-body > a > img {
+        width: 100%;
+        display: block;
+        border-radius: 1.5rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box {
+        width: 100%;
+        height: 4.5rem;
+        display: block;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: #F2F2F2 solid .2rem;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #000
+    }
+
+    #wrapper > aside > .side-box > .box-body > .input-box::placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-moz-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-ms-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box::-webkit-input-placeholder, #wrapper > aside > .side-box > .box-body > .input-box:-moz-placeholder {
+        color: #B1B1B1
+    }
+
+    #wrapper > aside > .side-box > .box-body > .search-box {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul {
+        width: 100%;
+        height: fit-content;
+        border: #F2F2F2 solid .2rem;
+        border-radius: 2rem;
+        background-color: #FFF
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li {
+        width: 100%;
+        height: 9rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > * {
+        display: inline-block
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        margin-right: 1.5rem;
+        float: right;
+        border-radius: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body {
+        width: 100%;
+        margin-right: 2rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > span {
+        width: 100%;
+        display: block;
+        text-align: right;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-title {
+        color: #3D3D3D;
+        margin-bottom: 1rem
+    }
+
+    #wrapper > aside > .side-box > .box-body > ul > li > a > .li-body > .li-views {
+        color: #9B9B9B;
+        font-family: "iyLight_woff"
+    }
+
+    #wrapper > main {
+        height: fit-content;
+        margin-left: 3%;
+        display: inline-block
+    }
+
+    #wrapper > main > .box, #wrapper > main > section > .box {
+        border: .2rem solid #F2F2F2;
+        border-radius: 1rem;
+        padding: 1.5rem 3rem;
+        margin: 3rem 0rem
+    }
+
+    #wrapper > main > section > h3, #wrapper > main > .box > .section-title {
+        width: 100%;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem
+    }
+
+    #wrapper > main > article {
+        width: 100%;
+        height: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article:first-child {
+        margin-top: 0rem
+    }
+
+    #wrapper > main > article > .art-head {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > article > .art-head > a {
+        width: fit-content;
+        display: block
+    }
+
+    #wrapper > main > article > .art-head > a > h2, #wrapper > main > article > .art-head > a > h1 {
+        width: fit-content;
+        text-align: right;
+        font-family: "iyExtraBold_woff";
+        font-size: 2.2rem;
+        color: #3D3D3D
+    }
+
+    #wrapper > main > article > .art-head > .more {
+        width: 100%;
+        height: 3rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item {
+        width: fit-content;
+        height: 100%;
+        margin-left: 1.5rem;
+        display: flex;
+        float: right;
+        align-items: center;
+        margin-top: .6rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > img {
+        height: 50%;
+        opacity: 30%;
+        margin-left: 1rem
+    }
+
+    #wrapper > main > article > .art-head > .more > .more-item > span {
+        color: #9B9B9B;
+        font-family: "iyLight_woff";
+        font-size: 1.2rem
+    }
+
+    #wrapper > main > article > .art-cover {
+        width: 100%;
+        border-radius: 2rem
+    }
+
+    #wrapper > main > article > .art-summary, #wrapper > main > article > .art-content {
+        margin: 2rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > *, #wrapper > main > article > .art-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.35rem;
+        line-height: 200%;
+        text-align: justify
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-summary > h4, #wrapper > main > article > .art-content > h2, #wrapper > main > article > .art-content > h3, #wrapper > main > article > .art-content > h4 {
+        font-family: "iyBold_woff";
+        margin: 1rem 0rem
+    }
+
+    #wrapper > main > article > .art-summary > h2, #wrapper > main > article > .art-content > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 1.9rem
+    }
+
+    #wrapper > main > article > .art-summary > h3, #wrapper > main > article > .art-content > h3 {
+        font-size: 1.55rem
+    }
+
+    #wrapper > main > article > .art-footer {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > main > article > .art-footer > ._button {
+        border-radius: .8rem;
+        float: left;
+        font-size: 1.4rem;
+        padding: .9rem 2.5rem
+    }
+
+    #wrapper > main > #tags {
+        width: 100%;
+        height: fit-content;
+        border-radius: 1rem;
+        text-align: right
+    }
+
+    #wrapper > main > #tags a {
+        width: fit-content;
+        padding: .3rem 1rem;
+        display: inline-block;
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        margin-bottom: .6rem;
+        border-radius: 2rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags a:last-child {
+        margin-bottom: 0rem
+    }
+
+    #wrapper > main > #tags .divider {
+        width: fit-content;
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #9B9B9B
+    }
+
+    #wrapper > main > #tags a:hover {
+        background-color: #f3f3f3
+    }
+
+    #wrapper > main > section {
+        width: 100%;
+        height: fit-content;
+        margin: 0rem
+    }
+
+    #wrapper > main > section > .box {
+        margin-top: 1rem;
+        padding: 1.5rem 2rem
+    }
+
+    #wrapper > main > #morePosts ul > li {
+        width: 100%;
+        text-align: right;
+        display: block;
+        margin: 0rem 0rem .5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem
+    }
+
+    #wrapper > main > #morePosts ul > li > a {
+        width: 100%;
+        text-align: right;
+        font-family: "iyMedium_woff";
+        font-size: 1.5rem;
+        display: block;
+        color: #3D3D3D;
+        transition: all 100ms
+    }
+
+    #wrapper > main > #morePosts ul > li:hover > a {
+        transition: all 100ms;
+        cursor: pointer;
+        color: #44B649
+    }
+
+    #wrapper > main > #pagination {
+        width: 100%;
+        height: 5rem;
+        background-color: #fff;
+        margin-bottom: 2rem;
+        border-radius: 1.4rem;
+        border: .2rem solid #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: hidden
+    }
+
+    #wrapper > main > #pagination > .page-num {
+        height: 100%;
+        border-right: .2rem solid #F2F2F2;
+        font-size: 1.6rem;
+        padding-top: 1.4rem;
+        flex-grow: 1;
+        color: #3D3D3D;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > main > #pagination > .page-num:first-child {
+        border-right: 0rem
+    }
+
+    #wrapper > main > #pagination > .page-num:hover {
+        background-color: #FCFCFC
+    }
+
+    #wrapper > main > #pagination > .current-page {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > main > #pagination > .current-page:hover {
+        background-color: #44B649
+    }
+
+    footer {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        background-color: #313131
+    }
+
+    footer > .footer-section {
+        width: 100%;
+        height: fit-content;
+        display: inline-block;
+        border-bottom: .1rem solid #6B6B6B
+    }
+
+    footer > .footer-section:last-child {
+        border-bottom: none
+    }
+
+    footer > #main-footer {
+        padding: 2% 8%
+    }
+
+    footer > #main-footer > div {
+        width: 48%;
+        height: fit-content
+    }
+
+    footer > #main-footer > #map {
+        width: fit-content;
+        display: block;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin: auto
+    }
+
+    footer > #main-footer > #details {
+        width: 100%;
+        display: inline-block;
+        margin: 2rem auto;
+        position: relative
+    }
+
+    footer > #main-footer > #details > #logo-section {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    footer > #main-footer > #details > #logo-section > img {
+        width: 6rem;
+        display: inline-block
+    }
+
+    footer > #main-footer > #details > #logo-section > div {
+        display: inline-block;
+        margin-right: 2rem
+    }
+
+    footer > #main-footer > #details > #logo-section > div > p {
+        font-family: "iyRegular_woff";
+        font-size: 1.1rem;
+        text-align: right;
+        color: #fff
+    }
+
+    footer > #main-footer > #details > #logo-section > div > #w-name {
+        font-family: "kBlack_woff";
+        font-size: 5rem
+    }
+
+    footer > #main-footer > #details > #address {
+        font-family: "iyRegular_woff";
+        line-height: 200%;
+        font-size: 1.3rem;
+        color: #fff;
+        text-align: center;
+        text-align: -moz-center;
+        text-align: -webkit-center;
+        margin-top: 3rem
+    }
+
+    footer > #footer-menu {
+        width: 100%;
+        height: fit-content;
+        padding: 1% 8%
+    }
+
+    footer > #footer-menu > ul {
+        width: 100%
+    }
+
+    footer > #footer-menu > ul > li {
+        width: 30%;
+        display: block;
+        float: right;
+        padding: .9rem 1rem;
+        margin-left: 5%;
+        margin-bottom: .7rem;
+        border-radius: 1rem
+    }
+
+    footer > #footer-menu > ul > li:nth-of-type(3n+3) {
+        margin-left: 0% !important
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        cursor: pointer;
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li:hover {
+        background-color: rgba(0, 0, 0, .13);
+        transition: all 400ms
+    }
+
+    footer > #footer-menu > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "iyLight_woff";
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none
+    }
+
+    footer > #footer-copyright {
+        width: 100%;
+        padding: 1% 8%;
+        font-family: "iyLight_woff";
+        font-size: 1.3rem;
+        text-align: right;
+        background-color: #313131;
+        color: #fff
+    }
+
+    footer > #footer-copyright:hover > a {
+        transition: all 1s;
+        transform: translateX(0rem);
+        opacity: 100%;
+        cursor: pointer
+    }
+
+    footer > #footer-copyright > a {
+        transition: all 1s;
+        color: #fff;
+        background-color: #ECBD20;
+        padding: .4rem .8rem;
+        margin-right: 1rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        display: inline-block;
+        transform: translateX(5rem);
+        opacity: 0%
+    }
+
+    #wrapper > .page-title {
+        width: 100%;
+        text-align: right;
+        font-size: 2.4rem;
+        font-family: "iyExtraBold_woff";
+        color: #3D3D3D;
+        margin: 0 0 3rem
+    }
+
+    #wrapper > .gallery-item {
+        width: 100%;
+        height: fit-content;
+        margin: 1.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 2.5rem 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > img {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-title > h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2rem;
+        color: #3D3D3D;
+        margin-right: 1.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body {
+        width: 100%;
+        height: fit-content;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li {
+        width: 100%;
+        height: 18rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        float: right
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:nth-of-type(3n+3) {
+        margin-left: 0rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: inline-block
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > img {
+        width: 100%;
+        height: 140%;
+        transform: translateY(-6rem);
+        object-fit: cover
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        opacity: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(68, 182, 73, .95);
+        z-index: 32000
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > .nextArr {
+        width: 2.5rem;
+        height: 2.5rem
+    }
+
+    #wrapper > .gallery-item > .gi-body > li > .gallery-image > .gi-info > span {
+        width: 50%;
+        font-family: "iyBold_woff";
+        font-size: 2rem;
+        color: #fff;
+        text-align: left
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info {
+        opacity: 100%;
+        transition: all 500ms;
+        cursor: pointer
+    }
+
+    #wrapper > .gallery-item > .gi-body > li:hover > .gallery-image > .gi-info > .nextArr {
+        -webkit-animation: nexArrAnim;
+        -o-animation: nexArrAnim;
+        animation: nexArrAnim;
+        animation-delay: 500ms;
+        -moz-animation-delay: 500ms;
+        -o-animation-delay: 500ms;
+        -webkit-animation-delay: 500ms;
+        animation-duration: 500ms;
+        -o-animation-duration: 500ms;
+        -webkit-animation-duration: 500ms;
+        -moz-animation-duration: 500ms;
+        animation-fill-mode: forwards
+    }
+
+    @keyframes nexArrAnim {
+        from {
+            transform: translateX(0rem)
+        }
+        to {
+            transform: translateX(1rem)
+        }
+    }#wrapper > #faq-body {
+         width: 100%;
+         height: fit-content;
+         display: inline-block;
+         margin-bottom: 5rem
+     }
+
+    #wrapper > #faq-body > ul {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        border: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        border-bottom: .25rem solid #F2F2F2
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 1.5rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > span {
+        font-family: "iyBold_woff";
+        font-size: 1.4rem
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-question > img {
+        width: 1.2rem;
+        height: 1.2rem;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 2.5rem
+    }
+
+    #wrapper > #faq-body > ul > li:last-child {
+        border-bottom: none
+    }
+
+    #wrapper > #faq-body > ul > li > .faq-answer {
+        display: none;
+        font-family: "iyLight_woff";
+        font-size: 1.5rem;
+        color: #282828;
+        padding: 2rem 1.5rem;
+        background-color: #fcfcfc
+    }
+
+    #wrapper > #page-content {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 0rem 5rem
+    }
+
+    #wrapper > #page-content > * {
+        font-family: "iyRegular_woff";
+        font-size: 1.4rem;
+        color: #313131;
+        margin: 1rem 0rem;
+        line-height: 200%
+    }
+
+    #wrapper > #page-content h1 {
+        font-family: "iyExtraBold_woff";
+        font-size: 4rem
+    }
+
+    #wrapper > #page-content h2 {
+        font-family: "iyExtraBold_woff";
+        font-size: 3rem
+    }
+
+    #wrapper > #page-content h3 {
+        font-family: "iyExtraBold_woff";
+        font-size: 2.5rem
+    }
+
+    #wrapper > #page-content p {
+        font-size: 1.4rem
+    }
+
+    #wrapper > #page-content strong {
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content .hint {
+        background-color: rgba(236, 189, 32, .4);
+        color: rgba(35, 35, 35, .85);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin: 1rem 0rem;
+        display: inline-block
+    }
+
+    #wrapper > #page-content .number-link {
+        width: fit-content;
+        display: block;
+        direction: ltr;
+        border: .2rem solid #44B649;
+        padding: .6rem 2rem;
+        border-radius: 5rem;
+        color: #343434;
+        font-family: "iyRegular_woff";
+        font-size: 1.5rem;
+        margin: 1.1rem 0rem
+    }
+
+    #wrapper > #page-content > .numbersSection-title {
+        font-family: "iyBold_woff";
+        font-size: 1.5rem;
+        margin-top: 1.5rem
+    }
+
+    #wrapper > #page-content > .contact-box {
+        width: 100%;
+        height: fit-content;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 5rem;
+        background-color: rgb(250, 250, 250)
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        padding: 2rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-header > h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body {
+        width: 100%;
+        height: fit-content;
+        padding: 0rem 3rem 2rem;
+        text-align: right
+    }
+
+    #wrapper > #page-content > .contact-box > .center-box {
+        text-align: center
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > #map {
+        width: 35rem;
+        height: 20.3rem;
+        display: block;
+        margin: auto;
+        border-radius: 2rem;
+        overflow: hidden
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        margin-bottom: 1.5rem;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.7rem;
+        border-radius: 3rem;
+        color: #44B649;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:hover {
+        background-color: #44B649;
+        color: #fff
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .number-link:last-child {
+        margin-left: 0rem
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link {
+        flex-grow: 1;
+        height: fit-content;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.7rem;
+        color: #9B4BAE;
+        border-color: #9B4BAE;
+        font-family: "iyBold_woff"
+    }
+
+    #wrapper > #page-content > .contact-box > .box-body > .instagram-link:hover {
+        background-color: #9B4BAE;
+        color: #fff
+    }
+
+    #wrapper > #preview {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        display: block;
+        background-color: rgba(0, 0, 0, .9);
+        z-index: 500000;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box {
+        width: fit-content;
+        background-color: lightgray;
+        display: block;
+        margin: 27.5% 2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        display: none
+    }
+
+    #wrapper > #preview > #preview-box > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
+    #wrapper > #preview > #close-icn {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        filter: invert(100%);
+        border-radius: 5rem;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, .16)
+    }
+
+    #wrapper > #preview > #close-icn:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, .25)
+    }
+}

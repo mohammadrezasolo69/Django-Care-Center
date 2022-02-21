@@ -1,0 +1,53 @@
+/* Kalameh Font Begin */
+/* k-font Black */
+@font-face {
+    font-family: "kBlack_woff";
+    src: url("k-font/woff/KalamehWeb_Black.woff");
+}
+
+
+/* IranYekanFaNum Font Begin */
+/* iy-font Light */
+@font-face {
+    font-family: "iyLight_ttf";
+    src: url("iy-font/ttf/iranyekanweblightfanum.ttf");
+}
+
+@font-face {
+    font-family: "iyLight_eot";
+    src: url("iy-font/eot/iranyekanweblightfanum.eot");
+}
+
+@font-face {
+    font-family: "iyLight_woff";
+    src: url("iy-font/woff/iranyekanweblightfanum.woff");
+}
+
+/* iy-font Regular */
+@font-face {
+    font-family: "iyRegular_woff";
+    src: url("iy-font/woff/iranyekanwebregularfanum.woff");
+}
+
+/* iy-font Medium */
+@font-face {
+    font-family: "iyMedium_woff";
+    src: url("iy-font/woff/iranyekanwebmediumfanum.woff");
+}
+
+/* iy-font Bold */
+@font-face {
+    font-family: "iyBold_woff";
+    src: url("iy-font/woff/iranyekanwebboldfanum.woff");
+}
+
+/* iy-font ExtraBold */
+@font-face {
+    font-family: "iyExtraBold_woff";
+    src: url("iy-font/woff/iranyekanwebextraboldfanum.woff");
+}
+
+/* iy-font Black */
+
+
+

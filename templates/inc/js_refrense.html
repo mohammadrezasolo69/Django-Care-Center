@@ -1,0 +1,26 @@
+{% load static %}
+
+<script src="{% static 'base/css/jQuery-3.5.1-main.js' %}"></script>
+
+<script>
+    // ---- HeaderMenu Begin ----
+    $("#nav-icon").on({
+        "click": function () {
+            $("#bl-filter").fadeToggle(1000);
+            $("#mobile-menu").css({
+                "animation": "mobileMenuAppearAnim",
+                "animationDuration": "2s",
+                "animationFillMode": "forwards"
+            });
+        }
+    });
+    $("#menu-close").on("click", function () {
+        $("#bl-filter").fadeToggle(1000);
+        $("#mobile-menu").css({
+            "animation": "mobileMenuDisApearAnim",
+            "animationDuration": "2s",
+            "animationFillMode": "forwards"
+        });
+    });
+    // ---- HeaderMenu End ----
+</script>
