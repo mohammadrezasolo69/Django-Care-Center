@@ -21,9 +21,10 @@
                 <ul>
                     <li><a href="{% url 'care_main:home' %}" style="font-family: tanha;font-size: large">خانه</a></li>
                     <li><a href="{% url 'gallery:gallery' %}" style="font-family: tanha;font-size: large">گالری</a></li>
-                    <li><a href="#" style="font-family: tanha;font-size: large">سوالات متداول</a></li>
-                    <li><a href="#" style="font-family: tanha;font-size: large">تماس با ما</a></li>
-                    <li><a href="#" style="font-family: tanha;font-size: large">درباره ما</a></li>
+
+                    <li><a href="{% url 'contact:contact' %}" style="font-family: tanha;font-size: large">تماس با ما</a>
+                    </li>
+                    <li><a href="{% url 'about:about' %}" style="font-family: tanha;font-size: large">درباره ما</a></li>
                     large
                 </ul>
             </nav>
@@ -39,9 +40,8 @@
         <ul>
             <li><a href="{% url 'care_main:home' %}" style="font-family: tanha;font-size: large">خانه</a></li>
             <li><a href="{% url 'gallery:gallery' %}" style="font-family: tanha;font-size:  large">گالری</a></li>
-            <li><a href="#" style="font-family: tanha;font-size: large">سوالات متداول</a></li>
-            <li><a href="#" style="font-family: tanha;font-size: large">تماس با ما</a></li>
-            <li><a href="#" style="font-family: tanha;font-size: large">درباره ما</a></li>
+            <li><a href="{% url 'contact:contact' %}" style="font-family: tanha;font-size: large">تماس با ما</a></li>
+            <li><a href="{% url 'about:about' %}" style="font-family: tanha;font-size: large">درباره ما</a></li>
         </ul>
     </nav>
     <div id="reseption-section" class="header-section">

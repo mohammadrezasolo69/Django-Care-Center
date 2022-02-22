@@ -6,3 +6,5 @@ from .models import Activity
 class ActivityAdmin(admin.ModelAdmin):
     list_display = ('title', 'descriptions', 'logo_tag', 'status')
     list_editable = ('status',)
+
+

@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'care_main.apps.CareMainConfig',
     'care_gallery.apps.CareGalleryConfig',
     'care_aboutUs.apps.CareAboutusConfig',
+    'care_contactUs.apps.CareContactusConfig',
 
 ]
 

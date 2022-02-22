@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock %}
+
+{% block main %}
+
+
+    <h1 class="page-title" style="font-family: tanha;text-align: center;padding-bottom: 70px">تماس با ما</h1>
+    <div id="page-content">
+        <div class="contact-box">
+            <div class="box-header">
+                <h2 style="font-family: tanha">شماره های تماس</h2>
+            </div>
+
+            <div class="box-body">
+                <a class="number-link" href="tel:09127251205" style="font-family: tanha">{{ contact.phone_1 }}</a>
+                <a class="number-link" href="tel:09127251205" style="font-family: tanha">{{ contact.phone_2 }}</a>
+                <a class="number-link" href="tel:09127251205" style="font-family: tanha">{{ contact.phone_3 }}</a>
+            </div>
+
+        </div>
+        <div class="contact-box">
+            <div class="box-header">
+                <h2 style="font-family: tanha">موقعیت مکانی ما در نقشه (مپ)</h2>
+            </div>
+            <div class="box-body">
+                <div id="map">
+                    <div class="gmap_canvas">
+                        <iframe width="350px" height="203px" id="gmap_canvas"
+                                src="{% static 'base/img/one.jpg' %}" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://www.embedgooglemap.net/"></a></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 203px;
+                            width: 350px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 203px;
+                            width: 350px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+        <div class="contact-box">
+            <div class="box-header">
+                <h2 style="font-family: tanha">اینستاگرام ما</h2>
+            </div>
+            <div class="box-body center-box">
+                <a class="number-link instagram-link" target="_blank" style="font-family: tanha"
+                   href="http://www.instagram.com/{{ contact.address_instagram }}">{{ contact.address_instagram }}</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
