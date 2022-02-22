@@ -5,8 +5,11 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # My URL
     path('', include('care_main.urls')),
     path('gallery/', include('care_gallery.urls')),
+    path('about-us/',include('care_aboutUs.urls'))
 ]
 
 if settings.DEBUG:

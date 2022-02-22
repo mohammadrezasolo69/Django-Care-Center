@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     # My apps
     'care_main.apps.CareMainConfig',
     'care_gallery.apps.CareGalleryConfig',
+    'care_aboutUs.apps.CareAboutusConfig',
 
 ]
 
@@ -44,7 +45,7 @@ ROOT_URLCONF = 'Config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
