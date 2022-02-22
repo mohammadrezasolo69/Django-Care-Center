@@ -24,3 +24,19 @@
     });
     // ---- HeaderMenu End ----
 </script>
+
+
+</script>
+<script>
+    $previewImg = $("#preview-box").children("img");
+    $(".gi-body").children("li").on("click", function () {
+        $imageSRC = $(this).children(".gallery-image").children("img").attr("src");
+        $("#preview").fadeToggle(500);
+        $("#preview").children("#preview-box").delay(500).fadeToggle(1000);
+        $previewImg.attr("src", $imageSRC);
+    });
+    $("#close-icn").on("click", function () {
+        $("#preview").fadeToggle(500);
+        $("#preview").children("#preview-box").fadeToggle(500);
+    })
+</script>

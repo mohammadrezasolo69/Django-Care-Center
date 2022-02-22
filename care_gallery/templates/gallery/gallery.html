@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}  |  گالری {% endblock %}
+
+{% block main %}
+
+    <h1 class="page-title" style="font-family: tanha;text-align: center;font-size: xxx-large;padding-bottom: 20px">
+        گالری</h1>
+
+
+    <div class="gallery-item">
+        {% for gallery in Gallery %}
+
+            <div class="gi-title">
+                <img src="{% static 'base/img/dot.png' %}">
+                <h2 style="font-family: tanha;text-align: center;font-size: xx-large;color: #309975">{{ gallery.title }}</h2>
+            </div>
+
+            <ul class="gi-body">
+                {% for img in Images %}
+                    {% if img.gallery.title == gallery.title %}
+                    <li>
+                        <a href="{% url 'gallery:gallery' %}" class="gallery-image">
+                            <div class="gi-info">
+                                <span style="font-family: tanha;text-align: center;font-size: large;padding-bottom: 20px">{{ img.title }}</span>
+                            </div>
+                            <img loading="lazy" src="{{ img.img.url }}"
+                                 alt="{{ img.title }}"
+                                 title="{{ img.title }}">
+                        </a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}
+
+

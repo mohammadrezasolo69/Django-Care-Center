@@ -25,6 +25,7 @@ INSTALLED_APPS = [
 
     # My apps
     'care_main.apps.CareMainConfig',
+    'care_gallery.apps.CareGalleryConfig',
 
 ]
 

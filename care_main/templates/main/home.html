@@ -28,9 +28,9 @@
                     <div class="grid-head">
                         <img alt="medical visit"
                              src="{{ Activity.logo.url }}">
-                        <p>{{ Activity.title }}</p>
+                        <p style="font-family: tanha">{{ Activity.title }}</p>
                     </div>
-                    <p class="grid-body">{{ Activity.descriptions }}</p>
+                    <p class="grid-body" style="font-family: tanha">{{ Activity.descriptions }}</p>
                 </li>
             {% endfor %}
         </ul>
@@ -40,13 +40,13 @@
 
     <div class="box section-title">
         <img class="section-bullet"
-             src="./مرکز شبانه روزی نگهداری و توانبخشی سالمندان محیا کرج _ مرکز سالمندان محیا_files/dot.png">
+             src="{% static 'base/img/dot.png' %}">
         <h2 style="font-family: tanha;color: #3ba140">پذیرش سالمند</h2>
     </div>
     <div id="ep-reception-box" class="box green-box">
         <div>
-            <p><strong>مرکز سالمندان محیا</strong>، به سبزی زندگی </p>
-            <a class="_button" href="https://mahyaecc.ir/contactUs">تماس با ما</a>
+            <p style="font-family: tanha"><strong>مرکز سالمندان سحر</strong>، به سبزی زندگی </p>
+            <a class="_button" href="https://mahyaecc.ir/contactUs" style="font-family: tanha">تماس با ما</a>
         </div>
     </div>
 
@@ -54,7 +54,7 @@
 
     <div class="box section-title">
         <img class="section-bullet"
-             src="./مرکز شبانه روزی نگهداری و توانبخشی سالمندان محیا کرج _ مرکز سالمندان محیا_files/dot.png">
+              src="{% static 'base/img/dot.png' %}">
         <h2 style="font-family: tanha;color: #3ba140">گالری</h2>
     </div>
 
@@ -62,11 +62,11 @@
 
     <div id="gallery-box" class="box">
         <div>
-            <p>عکس های گالری مرکز خودتان را ورق بزنید و با ما بیشتر آشنا شوید</p>
-            <a class="_button med-emphasis" href="https://mahyaecc.ir/gallery">گالری</a>
+            <p style="font-family: tanha">عکس های گالری مرکز خودتان را ورق بزنید و با ما بیشتر آشنا شوید</p>
+            <a class="_button med-emphasis" href="{% url 'gallery:gallery' %}" style="font-family: tanha">گالری</a>
         </div>
         <img alt="مرکز سالمندان محیا کرج"
-             src="./مرکز شبانه روزی نگهداری و توانبخشی سالمندان محیا کرج _ مرکز سالمندان محیا_files/WhatsApp Image 2020-11-03 at 8.21.07 AM.jpeg">
+              src="{% static 'base/img/galley.jpeg' %}">
     </div>
 
 
